@@ -1,0 +1,864 @@
+[
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**[Fireflies.ai](https://)** is the **leading AI teammate for meetings**, trusted by more than 20 million users across over 500,000 organizations, from fast-growing startups to Fortune 500 enterprises. Fireflies captures knowledge, automates repetitive work, and helps teams become more productive before, during, and after every meeting.\n\nFireflies has achieved unicorn status with a **valuation exceeding $1 billion.** In 2024, Ramp recognized Fireflies as the sixth most popular AI platform by number of paying customers, alongside companies including OpenAI, Midjourney, and Anthropic. There is a good chance you have already seen Fireflies quietly powering one of your recent meetings.\n\nWe are looking for a product-minded **Full Stack Engineer** who wants to own meaningful problems from end to end. This is a generalist role, not a position tied to one team or one layer of the stack. Depending on the problem, you may work across frontend experiences, backend services, APIs, databases, infrastructure, data systems, or internal tools.\n\nWe are an AI-native engineering organization. Our strongest engineers use coding agents to move faster, run work in parallel, and compound what the team learns, while remaining fully accountable for the architecture, code, testing, security, and customer outcome. We want engineers who combine speed with judgment, communicate clearly in an async environment, and consistently turn ambiguous problems into reliable products.\n\n### What you'll do:\n\n* Own customer and business problems from discovery and technical design through implementation, deployment, measurement, and iteration.\n* Build products and systems across the stack, choosing the right layer and tools for each problem rather than staying inside a narrow specialty.\n* Work closely with product, design, support, and engineering teammates to identify high-leverage opportunities and turn them into shipped outcomes.\n* Use AI coding agents and modern development tools to plan, build, review, test, document, and improve software at high velocity.\n* Run multiple streams of work effectively, unblock yourself, and make progress visible even when a project is uncertain or blocked.\n* Make thoughtful tradeoffs among speed, quality, complexity, scalability, security, and maintainability.\n* Review code with strong judgment, give candid and useful feedback, and help the team move decisions and pull requests forward quickly.\n* Turn lessons from incidents, reviews, and customer feedback into better tests, documentation, tooling, and reusable engineering context.\n* Measure the impact of what you ship and keep iterating until it produces a meaningful result for customers or the business.\n* Contribute ideas beyond the initial brief. We value engineers who spot opportunities, challenge assumptions, and build the first version rather than waiting for perfect instructions.\n\n### What we're looking for:\n\n* At least 3 years of professional software engineering experience, with meaningful experience building across both backend and frontend systems.\n* A record of owning and shipping production software end to end, not only completing isolated tickets or implementing detailed specifications.\n* Strong product judgment and a customer-focused approach to technical decisions.\n* Fluency with AI-assisted development. You have a real workflow for using coding agents to increase speed and quality, and you understand that the human engineer remains accountable for the result.\n* Strong written and verbal communication. You can explain complex ideas clearly, share progress without being chased, ask for feedback early, and work effectively in a remote, async team.\n* Sound engineering judgment across architecture, APIs, data modeling, reliability, performance, testing, observability, and security.\n* Experience making systems scale, with concrete examples of bottlenecks, tradeoffs, and lessons from operating production software.\n* High initiative, urgency, and curiosity. You learn unfamiliar systems quickly, propose ideas, and find a path forward when the answer is not obvious.\n* Attention to detail and pride in craft. You care whether the experience works well for users, not merely whether the code compiles.\n* Comfort giving and receiving candid feedback, reviewing teammates' work, and improving shared standards.\n\nOur primary stack includes Node.js, NestJS, Go, GraphQL, React, Next.js, MongoDB, GCP, and Kubernetes. Direct experience with every technology is not required. We care more about learning speed, engineering depth, and the ability to make sound decisions in unfamiliar systems.\n\n### What stands out:\n\n* You have built or operated systems at meaningful scale and can explain what broke, what you changed, and how you measured the result.\n* You have created products, tools, open-source projects, or substantial side projects that show initiative and technical taste.\n* You have improved a product or process without waiting for someone to assign the work.\n* You use multiple AI agents or parallel development workflows effectively, while maintaining a high bar for correctness and security.\n* You can point to work where you combined engineering, product thinking, and customer insight to create measurable impact.\n* You have worked successfully in a fast-moving startup or another environment with broad ownership and limited bureaucracy.\n\n### How we work:\n\n* We move in fast, incremental engineering cycles and prefer learning from shipped work over debating hypothetical perfection.\n* We overcommunicate progress, decisions, risks, and blockers because our team works across countries and time zones.\n* We use data and customer feedback to decide what matters and to measure whether our work succeeded.\n* We automate repetitive work and continuously improve the context, tools, and standards that help both people and agents perform better.\n* We expect engineers to take accountability and initiative. Freedom here comes with ownership of the outcome.\n* We value candid feedback, low ego, strong opinions held with curiosity, and teammates who make the people around them better.\n* We aim to get meaningfully better every week.\n\n### Perks and benefits:\n\n* Competitive compensation\n* Work remotely from anywhere\n* Opportunities to move laterally and grow rapidly\n* Paid time off and a flexible leave policy\n* A no-boss culture that empowers you to take ownership\n* Flexible working hours\n* LGBTQ+ friendly workplace\n* International offsites to connect and recharge\n* Technology reimbursements to support your work\n\n### About Fireflies.ai:\n\nAt Fireflies.ai, we are changing how teams use AI in their daily work. Our culture champions security, innovation, customer experience, and growth. Backed by $19 million from investors including Canaan and Khosla Ventures, plus angels from Slack, Facebook, Dropbox, Amazon, and Salesforce, Fireflies is driven by a global team of more than 100 people across over 20 countries and every time zone. We are building a world-class, global-first company, and we use our own product to do it.\n\nFireflies.ai is an equal opportunity employer. We strongly value diversity because our team is stronger with different perspectives and experiences. We do not discriminate based on race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, disability status, or any other protected characteristic.",
+          "id": "4617746",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1787308060,
+          "locationNames": [
+            "Cape Town",
+            "Budapest",
+            "Lisbon",
+            "Cairo Governorate",
+            "Ho Chi Minh City",
+            "Mexico City",
+            "Jakarta",
+            "Bangalore Urban",
+            "Dubai"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1317489",
+            "kind": "REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "full-stack-engineer",
+          "title": "Full Stack Engineer",
+          "compensation": "",
+          "equity": null,
+          "isBookmarked": false
+        }
+      ],
+      "id": "665380",
+      "startupId": "665380",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "QUICK_RESPONDER-665380",
+          "label": "Responds within three weeks",
+          "name": "QUICK_RESPONDER_BADGE",
+          "rating": null,
+          "tooltip": "Based on past data, Fireflies.ai  usually responds to incoming applications within three weeks"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "B2B-665380",
+          "label": "B2B",
+          "name": "B2B_BADGE",
+          "rating": null,
+          "tooltip": null
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": "growth_stage",
+          "id": "COMPANY_STAGE-665380",
+          "label": "Growth Stage",
+          "name": "COMPANY_STAGE_BADGE",
+          "rating": null,
+          "tooltip": "Expanding market presence"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "TOP_INVESTORS-665380",
+          "label": "Top Investors",
+          "name": "TOP_INVESTORS_BADGE",
+          "rating": null,
+          "tooltip": "This company has received a significant amount of investment from top investors"
+        }
+      ],
+      "companySize": "SIZE_51_200",
+      "highConcept": "An AI platform that helps you record, transcribe, and summarize your meetings",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "San Francisco",
+          "id": "1692"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/665380-05d82ff015d1022d4c21d3915286116d-medium_jpg.jpg?buster=1565813060",
+      "name": "Fireflies.ai ",
+      "slug": "fireflies",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [
+            "India"
+          ],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "Did you experience an insurance product and said to yourself, wish there was a better process powered by modern technology? Here is your opportunity to get in on the ground floor of a new startup that is on a mission to modernize the insurance ecosystem. We want to enable insurance companies and agents to meet their customers where they are and make the buying process for an insurance product easy and instant. Come, join us and be part of the disruption and help us imagine and define this new product. It is a green field opportunity where you get to innovate on the business and user experience and helping build a large scale platform with real-time streaming and analytics at the core. If you are a software engineer at heart and is passionate about delivering exceptional software, let’s talk!\n \n**Responsibilities**:\n1.\tDesign, implement, test and deliver highly scalable systems and services.\n2.\tParticipate in design and code reviews.\n3.\tTranslating designs and wireframes into high-quality code.\n4.\tBuild highly scalable API’s that are being continuously deployed and updated through an automated CI/CD pipeline. \n5.\tEnable user analytics, logging, monitoring, instrumentation for all services.\n6.\tExperience writing unit tests, integration tests, performance tests.\n7.\tCollaborate with various team members and stakeholders on requirements definition and feature design and development.\n8.\tTake part in agile ceremonies to estimate and execute programming projects.\n\n**Desired Skills and Experience**:\n1.\t5+ years’ experience as a software engineer with excellent design, problem solving and debugging skills.\n2.\tPolyglot programmer with experience in one or more of TypeScript, Python, Go. \n3.\tExperience with web development using modern front-end frameworks.\n4.\tExperience in building RESTful services using a design first approach.\n5.\tHands on experience with microservices developing cloud scale systems using serverless/managed services. \n6.\tProactive, thrives in a startup like environment with a strong sense of ownership and responsibility.\n7.\tPassion for high-quality code, tests, CI/CD, documentation, and production services.\n8.\tExperience with SQL as well as NoSQL for data persistence.\n9.\tStrong communication skills with technical and non-technical peers.\n10.\tAbility to thrive in a fast-paced, innovative startup like environment.\n11.\tExperience in scrum and agile methodologies.\n\n**Education**:\nBS/MS degree in Computer Science or related field.",
+          "id": "2311171",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787497044,
+          "liveStartAt": 1787428877,
+          "locationNames": [
+            "India"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "34759",
+            "kind": "REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": true,
+          "slug": "sr-full-stack-engineer",
+          "title": "Sr Full Stack Engineer",
+          "compensation": "₹15L – ₹30L • 0.0% – 1.0%",
+          "equity": "0.0% – 1.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "9001249",
+      "startupId": "9001249",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "B2C-9001249",
+          "label": "B2C",
+          "name": "B2C_BADGE",
+          "rating": null,
+          "tooltip": null
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": "early_stage",
+          "id": "COMPANY_STAGE-9001249",
+          "label": "Early Stage",
+          "name": "COMPANY_STAGE_BADGE",
+          "rating": null,
+          "tooltip": "Startup in initial stages"
+        }
+      ],
+      "companySize": "SIZE_11_50",
+      "highConcept": "eCommerce for Insurance",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "India",
+          "id": "1647"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Seattle",
+          "id": "1680"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Remote",
+          "id": "616175"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/9001249-54fe3c307733fe10e4eb57d111261ae7-medium_jpg.jpg?buster=1658380960",
+      "name": "Uniblox",
+      "slug": "uniblox",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**Responsibilities:**\n \n* Design and develop RESTful API Endpoints, ensuring high performance, scalability and  maintainability.\n* Collaborate with other Front-End Engineers and develop dynamic, responsive and user-friendly web applications.\n* Define Data Models and database schemas and manage relational databases or NoSQL databases ensuring data integrity and performance.\n* Build, manage and own deployment pipelines\n* Create and maintain documentation of application design, configuration and maintenance.\n* Provide accurate timelines for specific tasks assigned.\n* Participate in scheduled on-call rotation and respond to emergencies.\n\n**Minimum Qualifications**\n\n* 6+ years professional experience working with medium/large complex code bases\n* Proven experience in Full Stack development.\n* Experience with one or more of the following programming languages: Go(Primarily), Java, or Python.\n* Experience in REST API design and implementation.\n* DevOps experience.\n* Strong communication skills and work ethic.\n\n**Preferred Qualifications**\n    BS or MS Degree in Computer Science or equivalent field.\n    Demonstrated ability to write clean, maintainable, and well-documented code.\n    In-depth database management, cloud technologies (AWS), and containerization (Docker, Kubernetes)\n     Knowledge of React best practices, and ability to explain them to other developers\n     Familiarity with DevOps tools and practices, including CI/CD pipelines\n     Automated deployment tools (e.g. Terraform, Ansible, Jenkins)\n     Excellent problem-solving skills and attention to detail\n     Experience with Agile development methodologies such as SAFe, Scrum",
+          "id": "4627373",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1787579437,
+          "locationNames": [
+            "Bangalore Urban"
+          ],
+          "primaryRoleTitle": "Software Engineer",
+          "remote": false,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1326798",
+            "kind": "ONSITE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "full-stack-engineer-go-and-react-at-bangalore",
+          "title": "Full Stack Engineer-(Go and React) at Bangalore",
+          "compensation": "",
+          "equity": null,
+          "isBookmarked": false
+        }
+      ],
+      "id": "7070101",
+      "startupId": "7070101",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": "early_stage",
+          "id": "COMPANY_STAGE-7070101",
+          "label": "Early Stage",
+          "name": "COMPANY_STAGE_BADGE",
+          "rating": null,
+          "tooltip": "Startup in initial stages"
+        }
+      ],
+      "companySize": "SIZE_201_500",
+      "highConcept": "MIT spin-off based out of India creating AR/VR products",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Mumbai",
+          "id": "22939"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/7070101-91e72020cdb74db605b1dfb22633f44a-medium_jpg.jpg?buster=1563442221",
+      "name": "Tesseract",
+      "slug": "tesseract-9",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [
+            "India",
+            "Delhi, India",
+            "Ghaziabad, Uttar Pradesh",
+            "Faridabad, Haryana",
+            "Noida, Uttar Pradesh",
+            "Noida Extension, Uttar Pradesh",
+            "Gurugram, Haryana"
+          ],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**Looking for a Technical Co-Founder 🚀**\n\nI’m building **Capsules AI**, and I’m looking for someone who wants to build the company with me — not just join it.\n\nHere’s the problem we’re trying to solve:\n\nA customer walks into a furniture or décor store.\nThey like a sofa. They take a few pictures.\nThey say, **“Let me think about it.”**\nAnd walk out.\n\nFor the retailer, that customer is usually **lost**.\n\nWe’re building a system that changes that.\n\nThe customer can take that experience home with them — **visualise the actual product in their own room, explore the right alternatives, and discover products that genuinely work together.**\n\nNot just:\n\n&gt; “Here are 20 products you might like.”\n\nBut:\n\n&gt; **“Here’s your room, recreated with products that fit your space, style, colours and proportions — and here’s the combination that creates a cohesive look.”**\n\nThe goal is to make product selection feel less like shopping and more like **having a designer who knows what you like.**\n\nAnd there’s a lot more we want to build around this — AI agents, conversational shopping, knowledge graphs, visual AI, intelligent product discovery and more.\n\n### 🧠 The tech stack\n\n**Node.js | Next.js | React | LangGraph | LLMs | Knowledge Graphs | Prompt Engineering | AI Agents | Visual AI**\n\n### 👋 Who I’m looking for\n\nI’m looking for a **Technical Co-Founder** who:\n\n* Wants to build something **from 0 → 1**\n* Is excited about AI, product and solving real-world problems\n* Can own the technology stack and make architectural decisions\n* Is comfortable experimenting, failing fast and figuring things out\n* Most importantly, wants to **build a meaningful company**, not just another project\n\nYou don't need to tick every technology on the list.\n\n**I care more about how you think, how you build and whether you have the hunger to create something.**\n\n### ⚡ One important thing\n\n**This is an equity-only Co-Founder role.**\n\nThere is no salary being offered at this stage.\n\nYou would be coming in as a **founding member of the company**, with meaningful ownership and the opportunity to shape the product, technology and company from day one.\n\nIf the idea makes you curious, or you’ve been waiting for the right problem to build around — **let’s talk.**\n\n📩 DM me with your LinkedIn/GitHub and a little about yourself + something you've built that you're proud of.\n\n**Looking for a builder who wants to say one day:\n“We started with an idea. We actually built it.”**\n\n🚀",
+          "id": "4627422",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1787594456,
+          "locationNames": [
+            "Delhi",
+            "Faridabad",
+            "Noida",
+            "Noida Extension",
+            "Gurugram"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1326849",
+            "kind": "ONSITE_OR_REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "technical-co-founder",
+          "title": "Technical Co founder",
+          "compensation": "20.0% – 30.0%",
+          "equity": "20.0% – 30.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "10975240",
+      "startupId": "10975240",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        }
+      ],
+      "companySize": "SIZE_1_10",
+      "highConcept": null,
+      "locationTaggings": [],
+      "logoUrl": "https://wellfound.com/images/shared/nopic_startup.png",
+      "name": "Sirhaana ",
+      "slug": "sirhaana-2",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**Role**: Founding Engineer\n\n**Company**: Guile\n\n**Location**: Greater Hyderabad Area (Hybrid)\n\n**Type**: Full-time\n\n\n**About the Job**\nWe're building autonomous AI agents that break web applications before real attackers do–and we need our Founding Engineer.\nMost security tools throw a wall of theoretical, static false positives at developers. We're building Guile AI penetration testing platform where coordinated agents run persistent recon, write working Proof-of-Concept (PoC) exploits, and chain minor flaws into full exploit paths.\n\n\n**The Role**\nThis isn't a slice of a larger engineering org–you'd be building the core of the product itself. You'll own the multi-agent layer: coordinating specialized agents (recon, exploitation, post-exploitation) so they hand off findings to each other and escalate a chain of small issues into a real exploit path, and pushing that toward an always-on model with persistent parallel agents running continuously, not one-off scans kicked off by a CLI command.\n\n\n**What You'll Do**\n\n●Design and build a multi-target, persistent agent orchestration layer.\n\n●Design how agents coordinate–shared state, findings handoff, escalation logic.\n\n●Build enterprise features: SSO, audit logging, compliance-ready reporting.\n\n●Own the security logic itself–payload design, exploit validation, false-positive reduction–not  just the infrastructure around it.\n\n●Ship fast and alone, with minimal process.\n\n\n**You Probably Have**\n\n•Python at a real engineering level–services and tools shipped to users, not scripts.\n\n•Hands-on experience building agents: tool/function calling, multi-agent state sharing, context management (via LangGraph, CrewAI, AutoGen, or a custom framework).\n\n•Real offensive security depth: OWASP Top 10 fluency, hands-on exploitation experience, comfort with Burp Suite, Nuclei, sqlmap, nmap.\n\n•Docker-based sandboxing and CI/CD (GitHub Actions is fine).\n\n\n**Mindset**\nHigh agency–no one's writing tickets for you, you decide and build.\nGenuinely into both halves of this role (AI agents and offensive security)–one without the other won't work here.\nComfortable being the only engineer, with real ambiguity, for a while.\n\n\n**Nice to Have**\nBasic exposure to SSO, audit logging, or RBAC–it's on the roadmap.\nPrior work on an autonomous security or AI-agent product, open source or commercial",
+          "id": "4627365",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1787576125,
+          "locationNames": [
+            "Boston",
+            "California",
+            "Texas",
+            "San Francisco",
+            "London",
+            "Bengaluru",
+            "Delhi",
+            "Gurgaon",
+            "Hyderabad",
+            "Chennai"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1326791",
+            "kind": "ONSITE_OR_REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "founding-engineer",
+          "title": "Founding Engineer",
+          "compensation": "₹4.5L – ₹9L • 2.0% – 5.0%",
+          "equity": "2.0% – 5.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "11186369",
+      "startupId": "11186369",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "TOP_RESPONDER-11186369",
+          "label": "Top 1% of responders",
+          "name": "TOP_RESPONDER_BADGE",
+          "rating": null,
+          "tooltip": "Guile is in the top 1% of companies in terms of response time to applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "QUICK_RESPONDER-11186369",
+          "label": "Responds within a day",
+          "name": "QUICK_RESPONDER_BADGE",
+          "rating": null,
+          "tooltip": "Based on past data, Guile usually responds to incoming applications within a day"
+        }
+      ],
+      "companySize": "SIZE_1_10",
+      "highConcept": "Autonomous AI agents that find, chain, and prove real exploit paths in your software",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "San Francisco",
+          "id": "1692"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Hyderabad",
+          "id": "3003"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/11186369-ab5160abc605b0ac6f5ae6547d7f3efd-medium_jpg.jpg?buster=1787566550",
+      "name": "Guile",
+      "slug": "tryguile",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "About Dostack\nDostack helps enterprises own their AI. We build AI-powered workbenches tailored to how enterprise teams actually operate - their capabilities, constraints and culture. AI handles research, analysis, drafting and checking, while people retain judgment, accountability and control.\n\nThe opportunity\nWe are looking for a hands-on Solutions Architect to lead that implementation alongside the founders and engineering team.\nYou will sit between the customer's platform, security and business teams and Dostack's product and engineering team. You will take the implementation from technical discovery through deployment, integration, workflow validation and operational handover.\nTHIS IS A HANDS-ON IMPLEMENTATION ROLE ; You should be comfortable running a customer workshop in the morning, configuring Kubernetes in the afternoon and debugging an identity or API integration issue the next day. You will also help turn what we learn from this first deployment into a repeatable implementation model for future enterprise customers.\n\nWhat you will do : Earn customer trust, make the implementation work and build a deployment model that can be operated and repeated\n•\tLead technical discovery with customer platform, security, identity, networking and application teams.\n•\tConvert customer requirements and constraints into an implementation architecture, dependency plan and acceptance criteria.\n•\tDeploy and validate the Dostack runtime in a customer-managed Kubernetes environment.\n•\tIntegrate customer-provided PostgreSQL, object storage, OIDC, secret management, ingress, DNS, certificates and observability services.\n•\tConnect Dostack to approved enterprise systems such as Salesforce and internal APIs through governed connectors.\n•\tConfigure and troubleshoot API keys, OAuth 2.0 flows, network routes, TLS and organisation-scoped credentials.\n•\tConnect and validate the customer's enterprise LLM endpoint, including structured outputs, tool use and application-level quality checks.\n•\tWork with customer domain experts to translate real business processes into AI-enabled workflows.\n•\tTest workflows end to end using approved data and produce clear technical acceptance evidence.\n•\tDiagnose issues across Kubernetes, application services, identity, APIs, model endpoints and workflow execution.\n•\tCreate installation, upgrade, rollback, troubleshooting and operational-handover documentation.\n•\tTrain customer administrators and technical champions, and bring implementation feedback into the Dostack roadmap.\n\nWhat we are looking for\n•\tApproximately 6+ years in solutions architecture, implementation engineering, platform engineering or a comparable customer-facing technical role.\n•\tExperience owning at least one substantial enterprise software deployment from discovery through production or pilot acceptance.\n•\tStrong hands-on knowledge of Kubernetes, Docker and Helm.\n•\tAbility to troubleshoot Linux, containers, networking, ingress, DNS, TLS, storage and workload configuration.\n•\tExperience integrating enterprise applications through REST APIs and OpenAPI specifications.\n•\tWorking knowledge of OAuth 2.0, OIDC, API-key authentication, secrets management and enterprise identity.\n•\tPractical coding or scripting ability, preferably in Python, plus familiarity with PostgreSQL and object storage.\n•\tExperience with at least one major cloud platform, while understanding that customer environments may be private, hybrid or restricted.\n•\tApplied generative-AI experience with model APIs, prompts, structured outputs, evaluations or tool-calling patterns.\n•\tStrong written and verbal communication, with the judgment to be transparent about risks and unknowns in front of a customer.\n\nYou will thrive here if you\n•\tPrefer building and troubleshooting to producing architecture theatre.\n•\tCan move comfortably between business workflows and infrastructure details.\n•\tRemain calm and methodical when several customer dependencies are moving at once.\n•\tTreat security, tenancy and customer data boundaries as design requirements.\n•\tEnjoy working directly with founders and shaping an early product\n\nWhy join Dostack\n•\tOwn a strategically important customers from the beginning.\n•\tWork directly with the founders and influence product and company direction.\n•\tReceive meaningful early-stage responsibility and equity.",
+          "id": "4629865",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787714418,
+          "liveStartAt": 1787656086,
+          "locationNames": [
+            "Bangalore Urban"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": false,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1329057",
+            "kind": "ONSITE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "solutions-architect",
+          "title": "Solutions Architect",
+          "compensation": "₹25L – ₹30L • 0.5% – 1.0%",
+          "equity": "0.5% – 1.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "10911147",
+      "startupId": "10911147",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        }
+      ],
+      "companySize": "SIZE_1_10",
+      "highConcept": "DOstack.ai helps businesses to empower their domain experts to build Agentic AI workflows",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Bengaluru",
+          "id": "1904"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/10911147-18b84439912c2fb609a239feceda0f4f-medium_jpg.jpg?buster=1773998865",
+      "name": "DOstack AI Labs",
+      "slug": "dostack-ai-labs",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "### Why we’re building Carbon Trail?\n\nThe fashion industry is responsible for ~10% of global greenhouse gas emissions (GHG) and more than 90% of its emissions stem from the supply chain. Most fashion brands and retailers lack actual supply chain data and therefore, struggle to meet environmental impact disclosure regulations. The existing software solutions are generic and lack industry-specific insights like the impacts of recycled and organic materials, manufacturing technologies used across different fabrics &amp; products, and the ability to collect and integrate energy resource consumption data from suppliers.\nThis is why we created Carbon Trail, a software platform tailored to the fashion industry. Leveraging data and AI/ML, our product provides instantaneous product environment footprint (PEF) reports and critical analytics that cover the lifecycle of any fashion product. This helps fashion retailers and brands accurately measure the environmental footprints of their products which can then be used to create digital product passports, get a deeper understanding of their Scope 3 emissions, and identify emission reduction initiatives to meet their net-zero goals.\nAmong our founders, we have experience leading the development of groundbreaking data, IoT, and AI/ML products at Microsoft and other startups. We also have hands-on experience building climate strategies for global clients and implementing clean-energy solutions like solar. We believe climate change is the greatest challenge facing humanity and want to dedicate our careers to fighting against it.\n\n### What You Will Do\n\nWe're looking for a full-stack software engineer who can work on both the backend (AI/ML stack, APIs) and front end (customer-facing web app). You will work directly with the CTO on multiple segments of the product as it evolves which will include designing and implementing:\nLeveraging AI to extract useful information from unstructured data and fill gaps using intelligent machine learning-based heuristics.\nEvolve the front-end application using the latest open-source technologies in the market like React/NextJS, Tailwind, etc.\nBuild integrations with ERP/PLM systems used by brands/retailers to fetch data in real time.\nAugment our LCA engine to cover a wider range of materials, products &amp; processes as we grow.\n\n### What Will Make You A Great Fit\n\nCan you thrive in an early-stage environment: small team, fast-moving, with lots of ownership and willingness to do what it takes to keep shipping? or\nDo you have significant experience in an early-stage environment, especially as a CTO or an early employee?\n\nIn addition, possessing the following technical skills will make you an excellent fit:\n\n*  5+ years of experience developing frontend and backend systems\n*  Strong computer science fundamentals (Data Structures and Algorithms, OS primitives) and ability to design systems end-to-end\n*  Familiarity with SaaS infrastructure components like AuthN/AuthZ, multi-tenant architectures, observability etc.\n*  Highly skilled in Object Oriented Programming in languages such as C#, Java, Typescript, Python\n*  Experience working with databases like MongoDB, PostgreSQL and frameworks like React/NextJS, ASP.NET, etc.\n*  Fundamentals of AI/Machine Learning\nWe believe strong engineers can pick up new languages and frameworks very quickly. If you have demonstrated this capability before, please do reach out at hello@carbontrail.net if our mission is close to your heart too.",
+          "id": "2889543",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787576184,
+          "liveStartAt": 1787380278,
+          "locationNames": [
+            "India"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "143951",
+            "kind": "REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": true,
+          "slug": "founding-software-engineer",
+          "title": "Founding Software Engineer",
+          "compensation": "₹40L – ₹50L • 0.1% – 1.0%",
+          "equity": "0.1% – 1.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "9944858",
+      "startupId": "9944858",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "B2B-9944858",
+          "label": "B2B",
+          "name": "B2B_BADGE",
+          "rating": null,
+          "tooltip": null
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": "early_stage",
+          "id": "COMPANY_STAGE-9944858",
+          "label": "Early Stage",
+          "name": "COMPANY_STAGE_BADGE",
+          "rating": null,
+          "tooltip": "Startup in initial stages"
+        }
+      ],
+      "companySize": "SIZE_11_50",
+      "highConcept": "AI powered sustainability platform for fashion and retail industry",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Delhi",
+          "id": "2203"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Gurgaon",
+          "id": "2280"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Bangalore Urban",
+          "id": "406413"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/9944858-3bb14aff3d029a13439b995389e92fb6-medium_jpg.jpg?buster=1704716685",
+      "name": "Carbon Trail",
+      "slug": "carbon-trail-1",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**What you’ll actually do**\n* Build real things. You’ll write production code across the full stack — React frontends, Python/Node backends, ClickHouse queries, Kafka event pipelines, LangGraph agent workflows, and YAML-driven process definitions. Not prototypes. Not demos. Stuff that runs in production for real companies moving real cargo across real oceans.\n* Talk to enterprise clients. You’ll sit across from logistics managers, freight forwarders, and operations leads. You’ll listen to their messy, exception-filled processes — 6 approval levels, 4 document types, 3 systems that don’t talk to each other — and turn that chaos into structured workflows they can actually use. This isn’t optional. It’s the job.\n* Think AI-first. Every problem you encounter, your first question should be: “Can an agent handle this?” Not “let me build a CRUD app.” You’ll design agents that extract fields from Bills of Lading, validate invoices against purchase orders, auto-route approvals based on business rules, and flag exceptions before humans even notice them. You’ll work with LLMs, RAG pipelines, document parsers, and agent orchestration frameworks daily.\n* Own problems end-to-end. You won’t hand off a spec and wait. You’ll identify the problem, design the solution, build it, configure it for the client, deploy it, watch it in production, and fix what breaks. The FDE model means you own outcomes, not tasks.\n* \n**The tech you’ll work with**\n* Frontend: React, React Flow (node-based graph editors)\n* Backend: Python, Node.js, FastAPI\n* Data: ClickHouse, Kafka (event streaming), Debezium (CDC)\n* AI/ML: LangGraph (agent orchestration), LLMs (prompt engineering, RAG, tool use), DPT-2 (document extraction), PageIndex (long-document reasoning), Weaviate (vector search)\n* Permissions: OpenFGA (Zanzibar-based relationship access control)\n* Observability: Langfuse (LLM tracing), OpenTelemetry\n* Cost control: LiteLLM (gateway + budgets), Orkestra (model routing)\n* Infrastructure: dbt (semantic layer / MetricFlow), Temporal (scheduling), DataHub / OpenMetadata (catalog)\n\nYou don’t need to know all of this on day one. You need to be the kind of person who can pick up any of it in a week.\n\n**What we’re looking for**\n**The non-negotiables**\n* You can code. Full-stack, independently, at production quality. You’ve built things — not just assignments, but projects, tools, systems that other people actually used. You’re comfortable across the stack and you don’t need hand-holding to ship a feature.\n* You can communicate. You can explain a technical architecture to a non-technical client. You can run a discovery call. You can write a clear document. You can present without slides being your crutch. This is not a “nice to have.” Half the job is translating between the worlds of technology and business.\n* You can think. When someone describes a messy process, you don’t just nod — you ask why before how. You spot patterns underneath apparent chaos. You push back on unnecessary complexity. You can hold a system in your head and reason about what happens when things go wrong.\n* You learn fast. You don’t need to know logistics. You need to be the kind of person who, after two client calls and a week of reading, can hold their own in a conversation about Bills of Lading, demurrage charges, and incoterm implications. Domain knowledge is teachable. Curiosity and raw learning speed are not.\n* Strong signals\n* You’ve built something with LLMs — not just used ChatGPT, but actually integrated an LLM into a working system. Prompt engineering, tool use, agents, RAG — any of it.\n* You’ve worked on a side project or open-source contribution that required you to understand a domain outside of CS.\n* You can take a vague, messy brief and turn it into a structured plan without needing everything spelled out.\n* You default to shipping over perfecting. You’d rather build a rough working version in 2 hours than spend 2 days on a flawless spec.\n* You’ve done consulting, client-facing work, or been in a situation where you had to understand someone else’s world to solve their problem.\n**What this role is NOT**\n* It’s not a pure backend/frontend engineering job where you write code in isolation.\n* It’s not a PM role where you make decks and write tickets but never ship code.\n* It’s not a consulting gig where you give advice but don’t build.\n* It’s not a support role where you configure existing products without understanding the architecture.\n*\n\n**About GoComet**\nGoComet is a supply chain visibility and automation platform used by enterprises across 30+ countries. We track shipments across ocean, air, road, and rail. We manage procurement, contracts, invoices, and compliance. And now, with Nova, we’re building the AI-native operating layer that ties it all together.\nLogistics moves $12 trillion in goods every year. Most of it still runs on spreadsheets, email chains, and phone calls. We’re fixing that — not with another dashboard, but with intelligent, governed, agent-driven automation.",
+          "id": "4609999",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787724976,
+          "liveStartAt": 1787201035,
+          "locationNames": [
+            "Bangalore Urban"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": false,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1310010",
+            "kind": "ONSITE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "full-stack-ai-engineer",
+          "title": "Full stack AI Engineer",
+          "compensation": "₹30L – ₹55L",
+          "equity": null,
+          "isBookmarked": false
+        }
+      ],
+      "id": "10011241",
+      "startupId": "10011241",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        }
+      ],
+      "companySize": "SIZE_51_200",
+      "highConcept": "",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Mumbai",
+          "id": "22939"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/10011241-d11bda0d85fc78ceb6f92cbf71c6e276-medium_jpg.jpg?buster=1709015307",
+      "name": "GoComet",
+      "slug": "gocomet-4",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "**Fullstack Engineer (SDE-1)**\n**Team** : Engineering\n**Location** : Remote\n**Employment Type** : Full-Time\n**Experience** : 1+ Years (Internship/Freelance/Full-Time Considered)\n\n**About Us**\n\nAbstrabit is a private AI company based in Bengaluru. We help businesses run AI entirely on their own infrastructure: self-hosted LLMs, secure enterprise RAG, fine-tuned models, and AI agents that never send data outside the network. We serve clients across the US, UK, and EU, and our work spans the full private AI stack, from GPU infrastructure to production agents\n\n**About the Role**\n\nWe are hiring a Fullstack Engineer (SDE-1) to to build scalable, AI-native products across frontend, backend, and cloud. You will own features end-to-end, contribute to technical decisions, and work closely with product and leadership teams.\n\n**What You’ll Do**\n\n* Build scalable applications using React, Next.js, Node.js, and TypeScript.\n* Own features from architecture and development to deployment and optimization.\n* Design secure APIs, backend services, authentication, and database structures.\n* Integrate LLMs and Generative AI into production applications.\n* Build RAG pipelines involving ingestion, chunking, embeddings, retrieval, reranking, and grounded responses.\n* Develop AI Agents for multi-step task execution, tool usage, memory, and workflow automation.\n* Work with LLM Ops, including model serving, deployment, GPU utilization, quantization, and inference optimization.\n* Contribute to LLM fine-tuning, training data preparation, evaluation, and domain-specific model adaptation.\n* Work with vector databases, cloud infrastructure, CI/CD, monitoring, and production systems.\n* Debug, test, optimize, review code, and resolve production issues.\n* Collaborate with product, design, and engineering teams to deliver reliable solutions.\n\n\n**What We’re Looking For**\n\n* Bachelor’s or master’s degree in computer science or related fields.\n* 1+ years of fullstack development experience.\n* Strong knowledge of JavaScript, TypeScript, React, Next.js, and Node.js.\n* Experience with APIs, databases, authentication, and cloud platforms.\n* Familiarity with Git and collaborative development workflows.\n* Exposure to Generative AI, LLM APIs, or vector databases preferred.\n* Strong debugging, problem-solving, and optimization skills.\n* Comfortable working in fast-paced startup environments.\n* Good communication and cross-functional collaboration skills.\n* Ownership mindset with strong learning agility and initiative.",
+          "id": "4632597",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1787723629,
+          "locationNames": [
+            "Bengaluru"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1331601",
+            "kind": "REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "fullstack-engineer-sde-1",
+          "title": "Fullstack Engineer (SDE-1)",
+          "compensation": "₹3L – ₹5L • No equity",
+          "equity": "No equity",
+          "isBookmarked": false
+        }
+      ],
+      "id": "10466733",
+      "startupId": "10466733",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        }
+      ],
+      "companySize": "SIZE_11_50",
+      "highConcept": "Custom AI solutions transforming business operations",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Remote",
+          "id": "616175"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/10466733-8e40b1cdf372005f9c57eee910daca0e-medium_jpg.jpg?buster=1757317055",
+      "name": "Abstrabit Technologies",
+      "slug": "abstrabit-technologies-3",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [
+            "India"
+          ],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "### Please read before applying\n\nWe are not looking for a generic resume or AI-written cover letter. **Your application must include answers to the 9 questions at the end of this post. Applications without specific answers and links to past work will not be considered**. For this role - your skin in the game and willingness to take risk matters here.\n\n## About us\n\nWe are building an AI-first venture studio - a house of consumer apps where we rapidly build, launch, learn, and scale the products that show promise.\n\nOur goal is to ship one app every one to two weeks. Some apps will begin as partially developed products, and you will be responsible for taking them from their current state to a reliable, launch-ready product.\n\nYou will work directly with the founder, a former Head of Growth at a leading consumer-tech company who has helped scale products to 25 million/monthly users. This is an opportunity to learn product thinking, experimentation, growth, and company-building - not just software development.\n\n## What you will own\n\nYou will be the first engineer and take end-to-end technical ownership of each app:\n\n* Understand the product requirement and turn it into a working app\n* Complete partially built apps and ship them quickly\n* Build Android interfaces, backend integrations, databases, and APIs\n* Implement OTP authentication and user management\n* Build LLM-powered chat, streaming responses, conversation history, prompts, and model integrations\n* Set up analytics, crash reporting, notifications, and production monitoring\n* Use AI coding tools effectively to develop, debug, test, and document faster\n* Create reusable components and automation systems so each subsequent app can be launched faster\n* Own releases, technical decisions, reliability, and iteration after launch\n\n## Who we are looking for\n\nYou are likely a strong fit if you:\n\n* Have built and shipped at least one real mobile app\n* Understand Android development and can work with APIs and databases\n* Have worked with Firebase, Supabase, or a similar backend\n* Have experimented with LLM APIs or AI-powered product features\n* Use AI tools to accelerate your work without blindly trusting generated code\n* Learn unfamiliar technologies quickly and unblock yourself\n* Have good product sense and care about the complete user experience\n* Communicate clearly and take responsibility for outcomes\n* Are comfortable with speed, ambiguity, and frequent experimentation\n* Can work remotely initially and are open to working in person in Bengaluru\n\nThis is not a role for someone who wants only predefined tickets, extensive supervision, or a conventional low-ownership job.\n\n## Compensation and opportunity\n\nInitial compensation will be **₹20,000-₹25,000 per month**, based on ability and availability.\n\nFor the right person who consistently takes ownership, ships reliably, and helps an app achieve meaningful growth, there will be performance-linked incentives and the possibility of app-linked financial upside. As the business grows, we want the person building it with us to benefit from that growth and be part of our core team. \n\nThis can become a long-term, high-ownership role for someone who wants to grow into the technical leader of an app portfolio. Finance wise as well, as the app grows, your salary will continue to increase. So your skin in the game and williness to take risk matters here.\n\n## How to apply\n\nPlease answer these questions: (Any AI-written responses would be automatically rejected)\n\n1. Share links to your two best apps, APKs, or live projects. What exactly did you build yourself?\n2. Tell us about one product you took from an idea or incomplete state to a working release. How long did it take?\n3. Which AI coding tools do you use? Give one specific example where they helped you ship faster—and one example where their output was wrong.\n4. Imagine you inherit a partially built app with broken OTP login, incomplete chat history, and an LLM response that takes too long. You have seven days to launch. Briefly explain how you would approach it.\n5. What stack would you choose for an Android app with OTP authentication, persistent LLM chat, streaming responses, notifications, analytics, and a database? Why?\n6. What motivates you in life? What's your dream?\n7. Are you comfortable with the initial compensation and work in-person from Bengaluru?\n8. What's your life's greatest achievement till now? What's your biggest failure? \n9. What's greatest risk you have taken in life? What's your biggest strength and weakness? \n\n**Bonus:** Record a short screen walkthrough of something you have built. We care more about what you can build, how you think, and how quickly you learn than degrees or years of experience.",
+          "id": "4616105",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787646041,
+          "liveStartAt": 1787294739,
+          "locationNames": [
+            "Bengaluru"
+          ],
+          "primaryRoleTitle": "Android Developer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1315888",
+            "kind": "ONSITE_OR_REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "founding-android-engineer-ai-native-app-builder",
+          "title": "Founding Android Engineer — AI-Native App Builder",
+          "compensation": "₹20,000 – ₹25,000 • No equity",
+          "equity": "No equity",
+          "isBookmarked": false
+        }
+      ],
+      "id": "10607575",
+      "startupId": "10607575",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "GROWING_FAST-10607575",
+          "label": "Growing fast",
+          "name": "GROWING_FAST_BADGE",
+          "rating": null,
+          "tooltip": "Showed strong hiring growth in the past month"
+        }
+      ],
+      "companySize": "SIZE_1_10",
+      "highConcept": "Solving the dots with an atomic approach",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Bangalore Urban",
+          "id": "406413"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/10607575-65802139ff92748375f41eb0f0df938f-medium_jpg.jpg?buster=1752509585",
+      "name": "Atomicdot Technologies",
+      "slug": "atomicdot-technologies",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  }
+]
