@@ -6,7 +6,7 @@ dotenv.config();
 const JOB_SEARCH_RESULTS_OPERATION_ID =
   "tfe/5f366cd305b4f13cf6098df75f7ff2bb92fa42b9a74cb3a3aec7bdc69c6b051e";
 const WELLFOUND_APOLLO_SIGNATURE =
-  "1787736719-SDqD9vt7O%2FOobXpZ2Z%2B7tOb8oslyfS39zpIybg%2Byoeo%3D";
+  "1787974503-uLI%2FYtTrjgXCoqb%2BiCfd0jV7Mad1d3CypOdSBRZbqDc%3D";
 const WELLFOUND_CFP = "90d9e126cb676f6d842598f62b8f6441";
 
 const FILTER_CONFIGURATION_OUTPUT_FIELDS = new Set([
@@ -204,6 +204,9 @@ export async function jobSearchResultsX(defaultFilter: Record<string, unknown>) 
 }
 catch(e){
   console.log("failed the jobsearchresultX" , e.message)
+  if(e.response?.status==403){
+      return {data:null,status:403}
+  }
   return null
 }
 }

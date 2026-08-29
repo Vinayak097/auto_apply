@@ -3,18 +3,17 @@
     "target": "ES2022",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "rootDir": "./wellfound",
-    "outDir": "dist/wellfound",
+    "rootDir": ".",
+    "outDir": "dist",
     "strict": false,
     "declaration": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "types": ["node"],
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-  
+    "forceConsistentCasingInFileNames": true
   },
-  
-    "include": ["wellfound/**/*.ts"],
+
+  "include": ["index.ts", "wellfound/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
