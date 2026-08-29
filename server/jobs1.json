@@ -113,77 +113,6 @@
           "atsSource": null,
           "autoPosted": false,
           "currentUserApplied": false,
-          "description": "# Full Stack Engineer (0-2 yrs) - Haiku Studio\n\n**Fully remote (India)** · **CTC:** ₹10-12 LPA · **Reports to:** Founder\n\n## What we do\n\nHaiku Studio builds and runs software products for real businesses: DermaAI (a clinic OS for skin clinics: AI prescriptions, WhatsApp, billing), AMAL, Yadnya, and more coming. Small team, paying customers, shipping every week. You will work directly with the founder across all of these.\n\n## Who you'll work with\n\nThe founder is a second-time founder and ex-engineer at Google and Palo Alto Networks, who now builds products end to end: code, design, sales, support. For now, you are hire #1 on engineering, which means you get something rare this early in a career: daily, hands-on mentorship from someone who has shipped at big-tech scale and at startup speed, on everything from system design to how to run a customer call. You will learn in a year what usually takes three.\n\n## What you'll do\n\n- Build features end to end: Django/DRF backend, React/TypeScript frontend, Postgres\n- Ship with AI coding tools daily (Claude Code, Cursor) without lowering the bar. AI multiplies whatever you bring: good engineers get 10x faster, sloppy ones ship 10x more bugs. We want the first kind\n- Write short design docs before non-trivial work, follow the codebase's conventions, test what matters. Fast and accurate, not fast or accurate\n- Collaborate with designers on flows and screens, and with customers (doctors, clinic staff, business owners) on demos and feedback. Then turn that feedback into the next build\n- Own the details that make a product feel finished: loading and empty states, mobile, print, edge cases\n\n## What we're looking for\n\n- 0-2 years building and shipping web apps. Any stack; we use Python + React\n- Comfortable on both sides: the API and the screen that uses it\n- Cares about code quality even when the AI wrote the first draft. Does the right thing, not the quick thing\n- Product sense: you notice when a flow is confusing before the user does\n- Hungry to learn, quick to adapt, always upgrading your own toolkit\n- Highly ethical and disciplined. You do what you say, own your mistakes, and handle customer data with care\n- High energy, communicates clearly, enjoys talking to customers, and is a team player.\n- A plus, not a requirement: hands-on with LLM apps. Prompt engineering, LangGraph/LangChain pipelines, RAG, evals and LLM-as-judge, speech-to-text, structured outputs (Pydantic), AI governance (cost monitoring, PII handling, guardrails)\n\n**If you have the entrepreneurial itch and want to start something someday, this is the closest thing to a rehearsal: you'll see how a product business is actually built and run, from the inside**\n\n## How to apply\n\nSend a link to something you built (GitHub, live app, or a short Loom walkthrough) and 3 lines on what you'd improve in it, to **nikhil@haikustudio.ai**",
-          "id": "4634678",
-          "jobType": "full-time",
-          "lastRespondedAt": null,
-          "liveStartAt": 1787795591,
-          "locationNames": [
-            "Gurgaon"
-          ],
-          "primaryRoleTitle": "Full-Stack Engineer",
-          "remote": true,
-          "remoteConfig": {
-            "__typename": "JobListingRemoteConfig",
-            "id": "1333417",
-            "kind": "REMOTE",
-            "wfhFlexible": false
-          },
-          "reposted": false,
-          "slug": "full-stack-engineer-founding-team-0-2-years",
-          "title": "Full stack engineer (Founding team, 0-2 years)",
-          "compensation": "₹8L – ₹12L • No equity",
-          "equity": "No equity",
-          "isBookmarked": false
-        }
-      ],
-      "id": "11191825",
-      "startupId": "11191825",
-      "badges": [
-        {
-          "__typename": "Badge",
-          "avatarUrl": null,
-          "data": null,
-          "id": "ACTIVELY_HIRING",
-          "label": "Actively Hiring",
-          "name": "ACTIVELY_HIRING_BADGE",
-          "rating": null,
-          "tooltip": "Actively processing applications"
-        }
-      ],
-      "companySize": "SIZE_1_10",
-      "highConcept": "Product studio building AI-native software for real businesses",
-      "locationTaggings": [
-        {
-          "__typename": "NewTag",
-          "displayName": "Gurgaon",
-          "id": "2280"
-        }
-      ],
-      "logoUrl": "https://photos.wellfound.com/startups/i/11191825-d026540ca69ef943cad8cf64740b3a90-medium_jpg.jpg?buster=1787795428",
-      "name": "Haiku Studio",
-      "slug": "haiku-studio",
-      "newsStoryHeadline": null,
-      "newsStoryPublishedDate": null,
-      "newsStorySnippet": null,
-      "newsStorySource": null,
-      "newsStoryThumbnailUrl": null,
-      "newsStoryUrl": null
-    }
-  },
-  {
-    "__typename": "StartupSearchResultEdge",
-    "node": {
-      "__typename": "StartupSearchResult",
-      "highlightedJobListings": [
-        {
-          "__typename": "JobListingSearchResult",
-          "acceptedRemoteLocationNames": [
-            "India"
-          ],
-          "atsSource": null,
-          "autoPosted": false,
-          "currentUserApplied": false,
           "description": "**Who we are**\n\nWe build and run cold-email sending infrastructure as a product — Microsoft 365 and Google Workspace tenants, domains, DNS, mailboxes, and deliverability. \n\nA customer orders 100 tenants and 10,000 mailboxes and expects them to appear, working.\n\nWe are a small, fully remote team with live customers and real revenue. You would be our senior engineering hire, working directly with the founder.\n\n**What we're looking for**\n\n• A senior engineer who has run a production SaaS system, not only built features inside one\n\n• Someone who has been the only backend engineer somewhere — the person called when it broke at night\n\n• Strength in catching silent failures: an order marked complete before the work actually \nhappened, while the dashboard looks healthy for two days. Queues, transactions, migrations.\n\n• Comfortable owning the backend and shipping the Next.js admin and customer interfaces on top of it — roughly 70/30 backend to frontend\n\n• Works fluently with AI tooling and reviews its output critically\n\n**Requirements**\n\n• 4–6 years of backend experience, with genuine ownership of a production system\n\n• TypeScript and Node.js in depth — not JavaScript with type annotations\n\n• PostgreSQL at depth — transactions, row locking, indexing, and migrating a schema under live traffic. Managed-database experience alone is not enough.\n\n• Redis and BullMQ, or equivalent job queues — retries, idempotency, dead-letter handling, and what happens when the same job runs twice.\n\nLong-running workers rather than serverless; if your recent experience is primarily Lambda and API Gateway, it will not map cleanly to this stack.\n\n• Production browser automation — Puppeteer, Playwright or Selenium against real third-party portals. Not scraping: authenticated, multi-step flows including MFA, which have to be idempotent and safe to re-run. \n\nThis is core infrastructure for us, not a side concern — when it breaks, provisioning stops.\n\n• Express (or NestJS — the concepts transfer)\n\n• Next.js and React — able to build and ship a working admin screen end to end, unassisted\n\n• Prisma, or any ORM you know well enough to reason about the SQL it generates\n\n• REST API design — authentication, idempotency keys, rate limiting, versioning\n\n• Docker, and comfort working in Linux and the command line\n\nOur stack runs on Railway and Vercel.\n\n**Nice to have**\n\n• Microsoft Graph, Google Workspace Admin SDK, or similar vendor API integration at scale\n\n• Email infrastructure — SPF, DKIM, DMARC, and deliverability\n\n• Stripe or subscription billing\n\n• Experience migrating a live system between codebases with users on it\n\nLikely not a fit: consultancy or service-company backgrounds built on a series of short client projects, or engineers who have only worked inside a framework someone else set up.\n\n**Hiring process**\n\nWe keep this short and respect your time. Nothing unpaid takes more than 30 minutes.\n\n1. Apply — CV\n2. Short Loom video — if we're interested, we'll send three questions that you can answer in a quick loom video\n3. Introductory call — 20 to 30 minutes with the founder\n4. Technical interview — with a senior engineer\n5. Paid trial — real work, paid at your rate, on our development environment",
           "id": "4639765",
           "jobType": "full-time",
@@ -889,6 +818,150 @@
       "logoUrl": "https://photos.wellfound.com/startups/i/9342532-4c93b97152c56bb52d7c475293fe9a5e-medium_jpg.jpg?buster=1740498701",
       "name": "Xohani  Solutions",
       "slug": "xohani-solutions-2",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [
+            "Bengaluru, Karnataka",
+            "Bangalore Rural, Karnataka",
+            "Bangalore Urban, Karnataka",
+            "Bangalore Corporation Industrial Estate, Karnataka",
+            "Bangalore City Municipal Corporation Layout, Karnataka",
+            "Bengaluru, Bangalore Urban",
+            "Bengaluru, Bangalore Urban",
+            "Bengaluru, Bangalore Urban",
+            "Bangaluraih Circle, Bangalore Urban",
+            "Bengaluru East Taluk, Karnataka"
+          ],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "Find the full job description and how to apply here: https://www.pilotplans.com/careers\n\nType: Full-time\nPay: INR 21,00,000 - 28,00,000 per year, plus 0.08% - 0.10% in stock options (standard 1 year cliff, 4 year vesting)\nSetup: Fully remote. We are remote-first, so you would work wherever suits you, with no expected office days.\n\n**Please note the application form accessible via the link above is used instead of just applying via Wellfound because it is part of our applicant tracking system, and asks candidates additional information such as:\n\nBasic info: name, email, location, citizenship, if you know anyone at Pilot, your experience traveling, why you want to work here, what makes you happy and what you'd do if money wasn't a question, how many years of experience you have, if you're a student, and if so, what your GPA is, your resume, if a student, your transcript, and if applicable, a portfolio confirmation you've read the listed compensation for the role, what your salary expectations are, and when you could join, as well as some role specific questions, such as a background of relevant experience, how you would deal with a specific customer issue, and how you'd reduce support ticket volume. **It generally takes candidates 15-30 minutes to complete the application form, which replaces the need for us to do a screening call, meaning you get hired faster if successful! **",
+          "id": "4566097",
+          "jobType": "full-time",
+          "lastRespondedAt": null,
+          "liveStartAt": 1786156429,
+          "locationNames": [
+            "Bengaluru",
+            "Bangalore Rural",
+            "Bangalore Urban",
+            "Bangalore Corporation Industrial Estate",
+            "Bangalore City Municipal Corporation Layout",
+            "Bengaluru",
+            "Bengaluru",
+            "Bengaluru",
+            "Bangaluraih Circle",
+            "Bengaluru East Taluk"
+          ],
+          "primaryRoleTitle": "Software Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "1268707",
+            "kind": "ONSITE_OR_REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": false,
+          "slug": "finance-internal-ops-clone",
+          "title": "Senior Full-Stack Software Engineer",
+          "compensation": "₹21L – ₹28L • 0.08% – 0.1%",
+          "equity": "0.08% – 0.1%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "7594259",
+      "startupId": "7594259",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "B2C-7594259",
+          "label": "B2C",
+          "name": "B2C_BADGE",
+          "rating": null,
+          "tooltip": null
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": "early_stage",
+          "id": "COMPANY_STAGE-7594259",
+          "label": "Early Stage",
+          "name": "COMPANY_STAGE_BADGE",
+          "rating": null,
+          "tooltip": "Startup in initial stages"
+        },
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "GROWING_FAST-7594259",
+          "label": "Growing fast",
+          "name": "GROWING_FAST_BADGE",
+          "rating": null,
+          "tooltip": "Showed strong hiring growth in the past month"
+        }
+      ],
+      "companySize": "SIZE_11_50",
+      "highConcept": " Multiplayer consumer AI for travel where groups plan, decide, and book together",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Canada",
+          "id": "1625"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "India",
+          "id": "1647"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Vancouver",
+          "id": "1698"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Bengaluru",
+          "id": "1904"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Taipei",
+          "id": "2521"
+        },
+        {
+          "__typename": "NewTag",
+          "displayName": "Guadalajara",
+          "id": "2584"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/7594259-d2cd2f651651ad6a7edfc5d61dde43a7-medium_jpg.jpg?buster=1749175757",
+      "name": "Pilot (pilotplans.com)",
+      "slug": "pilotplans",
       "newsStoryHeadline": null,
       "newsStoryPublishedDate": null,
       "newsStorySnippet": null,

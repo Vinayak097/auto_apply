@@ -8,7 +8,6 @@ export async function askGemini(prompt: string , system_instruction:string) {
     contents: prompt,
     config:{
         systemInstruction:system_instruction,
-        
     }
   });
 
@@ -20,5 +19,5 @@ async function resumeExtraction(){
 
 }
 async function jobDescriptionExtraction(){
-    
+
 }
