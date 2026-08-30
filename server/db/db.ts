@@ -27,6 +27,9 @@ const jdmodel = new mongoose.Schema({
     reason:{
         type:String
     },    
+    applied:{
+        type:Boolean
+    }
    
 },{
     timestamps:true

@@ -12,107 +12,6 @@
           "atsSource": null,
           "autoPosted": false,
           "currentUserApplied": false,
-          "description": "Did you experience an insurance product and said to yourself, wish there was a better process powered by modern technology? Here is your opportunity to get in on the ground floor of a new startup that is on a mission to modernize the insurance ecosystem. We want to enable insurance companies and agents to meet their customers where they are and make the buying process for an insurance product easy and instant. Come, join us and be part of the disruption and help us imagine and define this new product. It is a green field opportunity where you get to innovate on the business and user experience and helping build a large scale platform with real-time streaming and analytics at the core. If you are a software engineer at heart and is passionate about delivering exceptional software, let’s talk!\n \n**Responsibilities**:\n1.\tDesign, implement, test and deliver highly scalable systems and services.\n2.\tParticipate in design and code reviews.\n3.\tTranslating designs and wireframes into high-quality code.\n4.\tBuild highly scalable API’s that are being continuously deployed and updated through an automated CI/CD pipeline. \n5.\tEnable user analytics, logging, monitoring, instrumentation for all services.\n6.\tExperience writing unit tests, integration tests, performance tests.\n7.\tCollaborate with various team members and stakeholders on requirements definition and feature design and development.\n8.\tTake part in agile ceremonies to estimate and execute programming projects.\n\n**Desired Skills and Experience**:\n1.\t5+ years’ experience as a software engineer with excellent design, problem solving and debugging skills.\n2.\tPolyglot programmer with experience in one or more of TypeScript, Python, Go. \n3.\tExperience with web development using modern front-end frameworks.\n4.\tExperience in building RESTful services using a design first approach.\n5.\tHands on experience with microservices developing cloud scale systems using serverless/managed services. \n6.\tProactive, thrives in a startup like environment with a strong sense of ownership and responsibility.\n7.\tPassion for high-quality code, tests, CI/CD, documentation, and production services.\n8.\tExperience with SQL as well as NoSQL for data persistence.\n9.\tStrong communication skills with technical and non-technical peers.\n10.\tAbility to thrive in a fast-paced, innovative startup like environment.\n11.\tExperience in scrum and agile methodologies.\n\n**Education**:\nBS/MS degree in Computer Science or related field.",
-          "id": "2311171",
-          "jobType": "full-time",
-          "lastRespondedAt": 1787497044,
-          "liveStartAt": 1787428877,
-          "locationNames": [
-            "India"
-          ],
-          "primaryRoleTitle": "Full-Stack Engineer",
-          "remote": true,
-          "remoteConfig": {
-            "__typename": "JobListingRemoteConfig",
-            "id": "34759",
-            "kind": "REMOTE",
-            "wfhFlexible": false
-          },
-          "reposted": true,
-          "slug": "sr-full-stack-engineer",
-          "title": "Sr Full Stack Engineer",
-          "compensation": "₹15L – ₹30L • 0.0% – 1.0%",
-          "equity": "0.0% – 1.0%",
-          "isBookmarked": false
-        }
-      ],
-      "id": "9001249",
-      "startupId": "9001249",
-      "badges": [
-        {
-          "__typename": "Badge",
-          "avatarUrl": null,
-          "data": null,
-          "id": "ACTIVELY_HIRING",
-          "label": "Actively Hiring",
-          "name": "ACTIVELY_HIRING_BADGE",
-          "rating": null,
-          "tooltip": "Actively processing applications"
-        },
-        {
-          "__typename": "Badge",
-          "avatarUrl": null,
-          "data": null,
-          "id": "B2C-9001249",
-          "label": "B2C",
-          "name": "B2C_BADGE",
-          "rating": null,
-          "tooltip": null
-        },
-        {
-          "__typename": "Badge",
-          "avatarUrl": null,
-          "data": "early_stage",
-          "id": "COMPANY_STAGE-9001249",
-          "label": "Early Stage",
-          "name": "COMPANY_STAGE_BADGE",
-          "rating": null,
-          "tooltip": "Startup in initial stages"
-        }
-      ],
-      "companySize": "SIZE_11_50",
-      "highConcept": "eCommerce for Insurance",
-      "locationTaggings": [
-        {
-          "__typename": "NewTag",
-          "displayName": "India",
-          "id": "1647"
-        },
-        {
-          "__typename": "NewTag",
-          "displayName": "Seattle",
-          "id": "1680"
-        },
-        {
-          "__typename": "NewTag",
-          "displayName": "Remote",
-          "id": "616175"
-        }
-      ],
-      "logoUrl": "https://photos.wellfound.com/startups/i/9001249-54fe3c307733fe10e4eb57d111261ae7-medium_jpg.jpg?buster=1658380960",
-      "name": "Uniblox",
-      "slug": "uniblox",
-      "newsStoryHeadline": null,
-      "newsStoryPublishedDate": null,
-      "newsStorySnippet": null,
-      "newsStorySource": null,
-      "newsStoryThumbnailUrl": null,
-      "newsStoryUrl": null
-    }
-  },
-  {
-    "__typename": "StartupSearchResultEdge",
-    "node": {
-      "__typename": "StartupSearchResult",
-      "highlightedJobListings": [
-        {
-          "__typename": "JobListingSearchResult",
-          "acceptedRemoteLocationNames": [
-            "India"
-          ],
-          "atsSource": null,
-          "autoPosted": false,
-          "currentUserApplied": false,
           "description": "**Who we are**\n\nWe build and run cold-email sending infrastructure as a product — Microsoft 365 and Google Workspace tenants, domains, DNS, mailboxes, and deliverability. \n\nA customer orders 100 tenants and 10,000 mailboxes and expects them to appear, working.\n\nWe are a small, fully remote team with live customers and real revenue. You would be our senior engineering hire, working directly with the founder.\n\n**What we're looking for**\n\n• A senior engineer who has run a production SaaS system, not only built features inside one\n\n• Someone who has been the only backend engineer somewhere — the person called when it broke at night\n\n• Strength in catching silent failures: an order marked complete before the work actually \nhappened, while the dashboard looks healthy for two days. Queues, transactions, migrations.\n\n• Comfortable owning the backend and shipping the Next.js admin and customer interfaces on top of it — roughly 70/30 backend to frontend\n\n• Works fluently with AI tooling and reviews its output critically\n\n**Requirements**\n\n• 4–6 years of backend experience, with genuine ownership of a production system\n\n• TypeScript and Node.js in depth — not JavaScript with type annotations\n\n• PostgreSQL at depth — transactions, row locking, indexing, and migrating a schema under live traffic. Managed-database experience alone is not enough.\n\n• Redis and BullMQ, or equivalent job queues — retries, idempotency, dead-letter handling, and what happens when the same job runs twice.\n\nLong-running workers rather than serverless; if your recent experience is primarily Lambda and API Gateway, it will not map cleanly to this stack.\n\n• Production browser automation — Puppeteer, Playwright or Selenium against real third-party portals. Not scraping: authenticated, multi-step flows including MFA, which have to be idempotent and safe to re-run. \n\nThis is core infrastructure for us, not a side concern — when it breaks, provisioning stops.\n\n• Express (or NestJS — the concepts transfer)\n\n• Next.js and React — able to build and ship a working admin screen end to end, unassisted\n\n• Prisma, or any ORM you know well enough to reason about the SQL it generates\n\n• REST API design — authentication, idempotency keys, rate limiting, versioning\n\n• Docker, and comfort working in Linux and the command line\n\nOur stack runs on Railway and Vercel.\n\n**Nice to have**\n\n• Microsoft Graph, Google Workspace Admin SDK, or similar vendor API integration at scale\n\n• Email infrastructure — SPF, DKIM, DMARC, and deliverability\n\n• Stripe or subscription billing\n\n• Experience migrating a live system between codebases with users on it\n\nLikely not a fit: consultancy or service-company backgrounds built on a series of short client projects, or engineers who have only worked inside a framework someone else set up.\n\n**Hiring process**\n\nWe keep this short and respect your time. Nothing unpaid takes more than 30 minutes.\n\n1. Apply — CV\n2. Short Loom video — if we're interested, we'll send three questions that you can answer in a quick loom video\n3. Introductory call — 20 to 30 minutes with the founder\n4. Technical interview — with a senior engineer\n5. Paid trial — real work, paid at your rate, on our development environment",
           "id": "4639765",
           "jobType": "full-time",
@@ -494,15 +393,17 @@
       "highlightedJobListings": [
         {
           "__typename": "JobListingSearchResult",
-          "acceptedRemoteLocationNames": [],
+          "acceptedRemoteLocationNames": [
+            "India"
+          ],
           "atsSource": null,
           "autoPosted": false,
           "currentUserApplied": false,
-          "description": "### Why we’re building Carbon Trail?\n\nThe fashion industry is responsible for ~10% of global greenhouse gas emissions (GHG) and more than 90% of its emissions stem from the supply chain. Most fashion brands and retailers lack actual supply chain data and therefore, struggle to meet environmental impact disclosure regulations. The existing software solutions are generic and lack industry-specific insights like the impacts of recycled and organic materials, manufacturing technologies used across different fabrics &amp; products, and the ability to collect and integrate energy resource consumption data from suppliers.\nThis is why we created Carbon Trail, a software platform tailored to the fashion industry. Leveraging data and AI/ML, our product provides instantaneous product environment footprint (PEF) reports and critical analytics that cover the lifecycle of any fashion product. This helps fashion retailers and brands accurately measure the environmental footprints of their products which can then be used to create digital product passports, get a deeper understanding of their Scope 3 emissions, and identify emission reduction initiatives to meet their net-zero goals.\nAmong our founders, we have experience leading the development of groundbreaking data, IoT, and AI/ML products at Microsoft and other startups. We also have hands-on experience building climate strategies for global clients and implementing clean-energy solutions like solar. We believe climate change is the greatest challenge facing humanity and want to dedicate our careers to fighting against it.\n\n### What You Will Do\n\nWe're looking for a full-stack software engineer who can work on both the backend (AI/ML stack, APIs) and front end (customer-facing web app). You will work directly with the CTO on multiple segments of the product as it evolves which will include designing and implementing:\nLeveraging AI to extract useful information from unstructured data and fill gaps using intelligent machine learning-based heuristics.\nEvolve the front-end application using the latest open-source technologies in the market like React/NextJS, Tailwind, etc.\nBuild integrations with ERP/PLM systems used by brands/retailers to fetch data in real time.\nAugment our LCA engine to cover a wider range of materials, products &amp; processes as we grow.\n\n### What Will Make You A Great Fit\n\nCan you thrive in an early-stage environment: small team, fast-moving, with lots of ownership and willingness to do what it takes to keep shipping? or\nDo you have significant experience in an early-stage environment, especially as a CTO or an early employee?\n\nIn addition, possessing the following technical skills will make you an excellent fit:\n\n*  5+ years of experience developing frontend and backend systems\n*  Strong computer science fundamentals (Data Structures and Algorithms, OS primitives) and ability to design systems end-to-end\n*  Familiarity with SaaS infrastructure components like AuthN/AuthZ, multi-tenant architectures, observability etc.\n*  Highly skilled in Object Oriented Programming in languages such as C#, Java, Typescript, Python\n*  Experience working with databases like MongoDB, PostgreSQL and frameworks like React/NextJS, ASP.NET, etc.\n*  Fundamentals of AI/Machine Learning\nWe believe strong engineers can pick up new languages and frameworks very quickly. If you have demonstrated this capability before, please do reach out at hello@carbontrail.net if our mission is close to your heart too.",
-          "id": "2889543",
+          "description": "Did you experience an insurance product and said to yourself, wish there was a better process powered by modern technology? Here is your opportunity to get in on the ground floor of a new startup that is on a mission to modernize the insurance ecosystem. We want to enable insurance companies and agents to meet their customers where they are and make the buying process for an insurance product easy and instant. Come, join us and be part of the disruption and help us imagine and define this new product. It is a green field opportunity where you get to innovate on the business and user experience and helping build a large scale platform with real-time streaming and analytics at the core. If you are a software engineer at heart and is passionate about delivering exceptional software, let’s talk!\n \n**Responsibilities**:\n1.\tDesign, implement, test and deliver highly scalable systems and services.\n2.\tParticipate in design and code reviews.\n3.\tTranslating designs and wireframes into high-quality code.\n4.\tBuild highly scalable API’s that are being continuously deployed and updated through an automated CI/CD pipeline. \n5.\tEnable user analytics, logging, monitoring, instrumentation for all services.\n6.\tExperience writing unit tests, integration tests, performance tests.\n7.\tCollaborate with various team members and stakeholders on requirements definition and feature design and development.\n8.\tTake part in agile ceremonies to estimate and execute programming projects.\n\n**Desired Skills and Experience**:\n1.\t5+ years’ experience as a software engineer with excellent design, problem solving and debugging skills.\n2.\tPolyglot programmer with experience in one or more of TypeScript, Python, Go. \n3.\tExperience with web development using modern front-end frameworks.\n4.\tExperience in building RESTful services using a design first approach.\n5.\tHands on experience with microservices developing cloud scale systems using serverless/managed services. \n6.\tProactive, thrives in a startup like environment with a strong sense of ownership and responsibility.\n7.\tPassion for high-quality code, tests, CI/CD, documentation, and production services.\n8.\tExperience with SQL as well as NoSQL for data persistence.\n9.\tStrong communication skills with technical and non-technical peers.\n10.\tAbility to thrive in a fast-paced, innovative startup like environment.\n11.\tExperience in scrum and agile methodologies.\n\n**Education**:\nBS/MS degree in Computer Science or related field.",
+          "id": "2311171",
           "jobType": "full-time",
-          "lastRespondedAt": 1787576184,
-          "liveStartAt": 1787380278,
+          "lastRespondedAt": 1787497044,
+          "liveStartAt": 1787428877,
           "locationNames": [
             "India"
           ],
@@ -510,20 +411,20 @@
           "remote": true,
           "remoteConfig": {
             "__typename": "JobListingRemoteConfig",
-            "id": "143951",
+            "id": "34759",
             "kind": "REMOTE",
             "wfhFlexible": false
           },
           "reposted": true,
-          "slug": "founding-software-engineer",
-          "title": "Founding Software Engineer",
-          "compensation": "₹40L – ₹50L • 0.1% – 1.0%",
-          "equity": "0.1% – 1.0%",
+          "slug": "sr-full-stack-engineer",
+          "title": "Sr Full Stack Engineer",
+          "compensation": "₹15L – ₹30L • 0.0% – 1.0%",
+          "equity": "0.0% – 1.0%",
           "isBookmarked": false
         }
       ],
-      "id": "9944858",
-      "startupId": "9944858",
+      "id": "9001249",
+      "startupId": "9001249",
       "badges": [
         {
           "__typename": "Badge",
@@ -539,9 +440,9 @@
           "__typename": "Badge",
           "avatarUrl": null,
           "data": null,
-          "id": "B2B-9944858",
-          "label": "B2B",
-          "name": "B2B_BADGE",
+          "id": "B2C-9001249",
+          "label": "B2C",
+          "name": "B2C_BADGE",
           "rating": null,
           "tooltip": null
         },
@@ -549,7 +450,7 @@
           "__typename": "Badge",
           "avatarUrl": null,
           "data": "early_stage",
-          "id": "COMPANY_STAGE-9944858",
+          "id": "COMPANY_STAGE-9001249",
           "label": "Early Stage",
           "name": "COMPANY_STAGE_BADGE",
           "rating": null,
@@ -557,27 +458,27 @@
         }
       ],
       "companySize": "SIZE_11_50",
-      "highConcept": "AI powered sustainability platform for fashion and retail industry",
+      "highConcept": "eCommerce for Insurance",
       "locationTaggings": [
         {
           "__typename": "NewTag",
-          "displayName": "Delhi",
-          "id": "2203"
+          "displayName": "India",
+          "id": "1647"
         },
         {
           "__typename": "NewTag",
-          "displayName": "Gurgaon",
-          "id": "2280"
+          "displayName": "Seattle",
+          "id": "1680"
         },
         {
           "__typename": "NewTag",
-          "displayName": "Bangalore Urban",
-          "id": "406413"
+          "displayName": "Remote",
+          "id": "616175"
         }
       ],
-      "logoUrl": "https://photos.wellfound.com/startups/i/9944858-3bb14aff3d029a13439b995389e92fb6-medium_jpg.jpg?buster=1704716685",
-      "name": "Carbon Trail",
-      "slug": "carbon-trail-1",
+      "logoUrl": "https://photos.wellfound.com/startups/i/9001249-54fe3c307733fe10e4eb57d111261ae7-medium_jpg.jpg?buster=1658380960",
+      "name": "Uniblox",
+      "slug": "uniblox",
       "newsStoryHeadline": null,
       "newsStoryPublishedDate": null,
       "newsStorySnippet": null,
@@ -833,56 +734,105 @@
       "highlightedJobListings": [
         {
           "__typename": "JobListingSearchResult",
-          "acceptedRemoteLocationNames": [
-            "Bengaluru, Karnataka",
-            "Bangalore Rural, Karnataka",
-            "Bangalore Urban, Karnataka",
-            "Bangalore Corporation Industrial Estate, Karnataka",
-            "Bangalore City Municipal Corporation Layout, Karnataka",
-            "Bengaluru, Bangalore Urban",
-            "Bengaluru, Bangalore Urban",
-            "Bengaluru, Bangalore Urban",
-            "Bangaluraih Circle, Bangalore Urban",
-            "Bengaluru East Taluk, Karnataka"
-          ],
+          "acceptedRemoteLocationNames": [],
           "atsSource": null,
           "autoPosted": false,
           "currentUserApplied": false,
-          "description": "Find the full job description and how to apply here: https://www.pilotplans.com/careers\n\nType: Full-time\nPay: INR 21,00,000 - 28,00,000 per year, plus 0.08% - 0.10% in stock options (standard 1 year cliff, 4 year vesting)\nSetup: Fully remote. We are remote-first, so you would work wherever suits you, with no expected office days.\n\n**Please note the application form accessible via the link above is used instead of just applying via Wellfound because it is part of our applicant tracking system, and asks candidates additional information such as:\n\nBasic info: name, email, location, citizenship, if you know anyone at Pilot, your experience traveling, why you want to work here, what makes you happy and what you'd do if money wasn't a question, how many years of experience you have, if you're a student, and if so, what your GPA is, your resume, if a student, your transcript, and if applicable, a portfolio confirmation you've read the listed compensation for the role, what your salary expectations are, and when you could join, as well as some role specific questions, such as a background of relevant experience, how you would deal with a specific customer issue, and how you'd reduce support ticket volume. **It generally takes candidates 15-30 minutes to complete the application form, which replaces the need for us to do a screening call, meaning you get hired faster if successful! **",
-          "id": "4566097",
+          "description": "# Senior AI Engineer (Founding Team)\n\n**Location:** Bengaluru (Preferred) / Remote (India)\n**Experience:** 3–8 Years\n**Type:** Full-time\n\n## About PurpleLens\n\nPurpleLens is building the next generation of offensive cybersecurity using Agentic AI.\n\nWe believe security shouldn't be based on theoretical vulnerabilities, it should be based on evidence. Our AI agents continuously think and act like ethical hackers, discovering assets, validating exploitable attack paths, and providing organizations with continuous, evidence-based risk intelligence.\n\nOur platform combines autonomous AI agents with human expertise to help organizations understand:\n\n* Their assets\n* Their attack surface\n* Their exposure\n* Their real business risk\n\nWe're an early-stage startup backed by customers, solving one of the most challenging problems in cybersecurity. If you enjoy building products from scratch, working with cutting-edge AI systems, and shipping quickly, we'd love to talk.\n\n---\n\n# The Role\n\nWe're looking for a **Senior AI Engineer** who enjoys building products, not just models.\n\nThis is a hands-on engineering role where you'll own end-to-end product capabilities, from idea to production. You'll design intelligent agent workflows, integrate LLMs with security tooling, build scalable backend services, and ship customer-facing features independently.\n\nThis is **not** a role where you'll be working on isolated ML experiments. You'll be responsible for delivering production-ready AI capabilities that customers use every day.\n\nYou'll work directly with the founders and become a key member of the engineering team.\n\n---\n\n# What You'll Do\n\n* Own complete product features from design through deployment.\n* Design and build production-grade AI agents and autonomous workflows.\n* Build systems around LLMs, retrieval, memory, planning, and orchestration.\n* Integrate AI agents with cybersecurity tools, APIs, and external systems.\n* Optimize AI systems for accuracy, latency, reliability, and cost.\n* Build scalable backend services and APIs.\n* Work closely with founders to rapidly convert customer feedback into product.\n* Take responsibility for engineering decisions and product quality.\n* Contribute to architecture and technical direction as the company grows.\n\n---\n\n# What We're Looking For\n\n### Required\n\n* 3+ years of software engineering experience.\n* Previous startup experience is **mandatory**.\n* Ideally part of a founding or early engineering team.\n* Proven ability to independently own and deliver complete product features.\n* Strong Python engineering skills.\n* Experience building production applications using modern AI frameworks.\n* Experience with LLM APIs and agent frameworks.\n* Strong backend engineering fundamentals.\n* Experience deploying and operating cloud-native applications.\n* Comfortable working in ambiguity and moving fast.\n* Strong product mindset and ownership.\n\n---\n\n### Bonus Points\n\n* Cybersecurity experience.\n* Offensive security or penetration testing knowledge.\n* Experience building AI agents for security workflows.\n* Knowledge of attack techniques, reconnaissance, vulnerability discovery, or exploit development.\n* Experience with Kubernetes, Docker, cloud infrastructure, and distributed systems.\n* Experience with MCP, tool calling, RAG, memory systems, and multi-agent architectures.\n* Contributions to open-source AI or cybersecurity projects.\n\n---\n\n# What Makes Someone Successful Here\n\nYou're someone who:\n\n* Loves building products from zero to one.\n* Doesn't wait for detailed specifications.\n* Can independently solve complex engineering problems.\n* Enjoys shipping every week.\n* Takes ownership rather than waiting for instructions.\n* Learns new technologies rapidly.\n* Thrives in a fast-moving startup environment.\n\n---\n\n# Why Join PurpleLens\n\n* Build foundational technology at the intersection of AI and cybersecurity.\n* Work directly with experienced founders solving real customer problems.\n* Own meaningful parts of the product from day one.\n* Help define the technical direction of the company.\n* Learn and work with cutting-edge Agentic AI architectures.\n* Opportunity to grow into a technical leadership role as the company scales.\n\n---\n\n# Our Tech Stack\n\n* Python\n* FastAPI\n* LLMs (OpenAI, Anthropic, open-source models)\n* Agentic AI frameworks\n* Docker &amp; Kubernetes\n* MongoDB\n* Cloud Infrastructure (AWS/Azure)\n* GitHub Actions\n* Modern AI tooling and orchestration frameworks\n\n---\n\n# How We Hire\n\nWe're looking for builders with a strong track record of ownership.\n\nOur interview process focuses on:\n\n* Engineering depth\n* Product thinking\n* AI system design\n* Hands-on coding\n* Ownership and execution\n* Startup mindset\n\nIf you've built products that customers love and enjoy solving hard engineering problems, we'd love to hear from you.\n\n**Apply by sending your resume, GitHub profile (if available), and a brief note describing a product feature you've personally owned end-to-end.**",
+          "id": "4124739",
           "jobType": "full-time",
-          "lastRespondedAt": null,
-          "liveStartAt": 1786156429,
+          "lastRespondedAt": 1786951133,
+          "liveStartAt": 1786984264,
           "locationNames": [
-            "Bengaluru",
-            "Bangalore Rural",
-            "Bangalore Urban",
-            "Bangalore Corporation Industrial Estate",
-            "Bangalore City Municipal Corporation Layout",
-            "Bengaluru",
-            "Bengaluru",
-            "Bengaluru",
-            "Bangaluraih Circle",
-            "Bengaluru East Taluk"
+            "Bangalore Urban"
           ],
-          "primaryRoleTitle": "Software Engineer",
-          "remote": true,
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": false,
           "remoteConfig": {
             "__typename": "JobListingRemoteConfig",
-            "id": "1268707",
-            "kind": "ONSITE_OR_REMOTE",
-            "wfhFlexible": false
+            "id": "854229",
+            "kind": "ONSITE",
+            "wfhFlexible": true
           },
-          "reposted": false,
-          "slug": "finance-internal-ops-clone",
-          "title": "Senior Full-Stack Software Engineer",
-          "compensation": "₹21L – ₹28L • 0.08% – 0.1%",
-          "equity": "0.08% – 0.1%",
+          "reposted": true,
+          "slug": "senior-ai-engineer-founding-team",
+          "title": "Senior AI Engineer (Founding Team)",
+          "compensation": "₹12L – ₹36L • 0.25% – 1.0%",
+          "equity": "0.25% – 1.0%",
           "isBookmarked": false
         }
       ],
-      "id": "7594259",
-      "startupId": "7594259",
+      "id": "10394821",
+      "startupId": "10394821",
+      "badges": [
+        {
+          "__typename": "Badge",
+          "avatarUrl": null,
+          "data": null,
+          "id": "ACTIVELY_HIRING",
+          "label": "Actively Hiring",
+          "name": "ACTIVELY_HIRING_BADGE",
+          "rating": null,
+          "tooltip": "Actively processing applications"
+        }
+      ],
+      "companySize": "SIZE_1_10",
+      "highConcept": "AI Agents for Offensive Security",
+      "locationTaggings": [
+        {
+          "__typename": "NewTag",
+          "displayName": "Bengaluru",
+          "id": "1904"
+        }
+      ],
+      "logoUrl": "https://photos.wellfound.com/startups/i/10394821-87cedf3e40ef29c8c374568dec9657fb-medium_jpg.jpg?buster=1776835174",
+      "name": "Purplelens.ai",
+      "slug": "purplelensai",
+      "newsStoryHeadline": null,
+      "newsStoryPublishedDate": null,
+      "newsStorySnippet": null,
+      "newsStorySource": null,
+      "newsStoryThumbnailUrl": null,
+      "newsStoryUrl": null
+    }
+  },
+  {
+    "__typename": "StartupSearchResultEdge",
+    "node": {
+      "__typename": "StartupSearchResult",
+      "highlightedJobListings": [
+        {
+          "__typename": "JobListingSearchResult",
+          "acceptedRemoteLocationNames": [],
+          "atsSource": null,
+          "autoPosted": false,
+          "currentUserApplied": false,
+          "description": "### Why we’re building Carbon Trail?\n\nThe fashion industry is responsible for ~10% of global greenhouse gas emissions (GHG) and more than 90% of its emissions stem from the supply chain. Most fashion brands and retailers lack actual supply chain data and therefore, struggle to meet environmental impact disclosure regulations. The existing software solutions are generic and lack industry-specific insights like the impacts of recycled and organic materials, manufacturing technologies used across different fabrics &amp; products, and the ability to collect and integrate energy resource consumption data from suppliers.\nThis is why we created Carbon Trail, a software platform tailored to the fashion industry. Leveraging data and AI/ML, our product provides instantaneous product environment footprint (PEF) reports and critical analytics that cover the lifecycle of any fashion product. This helps fashion retailers and brands accurately measure the environmental footprints of their products which can then be used to create digital product passports, get a deeper understanding of their Scope 3 emissions, and identify emission reduction initiatives to meet their net-zero goals.\nAmong our founders, we have experience leading the development of groundbreaking data, IoT, and AI/ML products at Microsoft and other startups. We also have hands-on experience building climate strategies for global clients and implementing clean-energy solutions like solar. We believe climate change is the greatest challenge facing humanity and want to dedicate our careers to fighting against it.\n\n### What You Will Do\n\nWe're looking for a full-stack software engineer who can work on both the backend (AI/ML stack, APIs) and front end (customer-facing web app). You will work directly with the CTO on multiple segments of the product as it evolves which will include designing and implementing:\nLeveraging AI to extract useful information from unstructured data and fill gaps using intelligent machine learning-based heuristics.\nEvolve the front-end application using the latest open-source technologies in the market like React/NextJS, Tailwind, etc.\nBuild integrations with ERP/PLM systems used by brands/retailers to fetch data in real time.\nAugment our LCA engine to cover a wider range of materials, products &amp; processes as we grow.\n\n### What Will Make You A Great Fit\n\nCan you thrive in an early-stage environment: small team, fast-moving, with lots of ownership and willingness to do what it takes to keep shipping? or\nDo you have significant experience in an early-stage environment, especially as a CTO or an early employee?\n\nIn addition, possessing the following technical skills will make you an excellent fit:\n\n*  5+ years of experience developing frontend and backend systems\n*  Strong computer science fundamentals (Data Structures and Algorithms, OS primitives) and ability to design systems end-to-end\n*  Familiarity with SaaS infrastructure components like AuthN/AuthZ, multi-tenant architectures, observability etc.\n*  Highly skilled in Object Oriented Programming in languages such as C#, Java, Typescript, Python\n*  Experience working with databases like MongoDB, PostgreSQL and frameworks like React/NextJS, ASP.NET, etc.\n*  Fundamentals of AI/Machine Learning\nWe believe strong engineers can pick up new languages and frameworks very quickly. If you have demonstrated this capability before, please do reach out at hello@carbontrail.net if our mission is close to your heart too.",
+          "id": "2889543",
+          "jobType": "full-time",
+          "lastRespondedAt": 1787576184,
+          "liveStartAt": 1787380278,
+          "locationNames": [
+            "India"
+          ],
+          "primaryRoleTitle": "Full-Stack Engineer",
+          "remote": true,
+          "remoteConfig": {
+            "__typename": "JobListingRemoteConfig",
+            "id": "143951",
+            "kind": "REMOTE",
+            "wfhFlexible": false
+          },
+          "reposted": true,
+          "slug": "founding-software-engineer",
+          "title": "Founding Software Engineer",
+          "compensation": "₹40L – ₹50L • 0.1% – 1.0%",
+          "equity": "0.1% – 1.0%",
+          "isBookmarked": false
+        }
+      ],
+      "id": "9944858",
+      "startupId": "9944858",
       "badges": [
         {
           "__typename": "Badge",
@@ -898,9 +848,9 @@
           "__typename": "Badge",
           "avatarUrl": null,
           "data": null,
-          "id": "B2C-7594259",
-          "label": "B2C",
-          "name": "B2C_BADGE",
+          "id": "B2B-9944858",
+          "label": "B2B",
+          "name": "B2B_BADGE",
           "rating": null,
           "tooltip": null
         },
@@ -908,60 +858,35 @@
           "__typename": "Badge",
           "avatarUrl": null,
           "data": "early_stage",
-          "id": "COMPANY_STAGE-7594259",
+          "id": "COMPANY_STAGE-9944858",
           "label": "Early Stage",
           "name": "COMPANY_STAGE_BADGE",
           "rating": null,
           "tooltip": "Startup in initial stages"
-        },
-        {
-          "__typename": "Badge",
-          "avatarUrl": null,
-          "data": null,
-          "id": "GROWING_FAST-7594259",
-          "label": "Growing fast",
-          "name": "GROWING_FAST_BADGE",
-          "rating": null,
-          "tooltip": "Showed strong hiring growth in the past month"
         }
       ],
       "companySize": "SIZE_11_50",
-      "highConcept": " Multiplayer consumer AI for travel where groups plan, decide, and book together",
+      "highConcept": "AI powered sustainability platform for fashion and retail industry",
       "locationTaggings": [
         {
           "__typename": "NewTag",
-          "displayName": "Canada",
-          "id": "1625"
+          "displayName": "Delhi",
+          "id": "2203"
         },
         {
           "__typename": "NewTag",
-          "displayName": "India",
-          "id": "1647"
+          "displayName": "Gurgaon",
+          "id": "2280"
         },
         {
           "__typename": "NewTag",
-          "displayName": "Vancouver",
-          "id": "1698"
-        },
-        {
-          "__typename": "NewTag",
-          "displayName": "Bengaluru",
-          "id": "1904"
-        },
-        {
-          "__typename": "NewTag",
-          "displayName": "Taipei",
-          "id": "2521"
-        },
-        {
-          "__typename": "NewTag",
-          "displayName": "Guadalajara",
-          "id": "2584"
+          "displayName": "Bangalore Urban",
+          "id": "406413"
         }
       ],
-      "logoUrl": "https://photos.wellfound.com/startups/i/7594259-d2cd2f651651ad6a7edfc5d61dde43a7-medium_jpg.jpg?buster=1749175757",
-      "name": "Pilot (pilotplans.com)",
-      "slug": "pilotplans",
+      "logoUrl": "https://photos.wellfound.com/startups/i/9944858-3bb14aff3d029a13439b995389e92fb6-medium_jpg.jpg?buster=1704716685",
+      "name": "Carbon Trail",
+      "slug": "carbon-trail-1",
       "newsStoryHeadline": null,
       "newsStoryPublishedDate": null,
       "newsStorySnippet": null,

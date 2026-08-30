@@ -1,12 +1,17 @@
 import fs from "fs";
 import path from "path";
-const pdfParse =require('pdf-parse')
+import { PDFParse } from "pdf-parse";
 import mammoth from "mammoth";
 
 async function pdfExtraction(filePath: string): Promise<string> {
   const dataBuffer = fs.readFileSync(filePath);
-  const data = await pdfParse(dataBuffer);
-  return data.text;
+  const parser = new  PDFParse({data:dataBuffer});
+  
+  const result = await parser.getText();
+
+  await parser.destroy();
+
+  return result.text;
 }
 
 export async function docExtraction(filepath: string) {

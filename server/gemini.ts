@@ -1,17 +1,28 @@
 import { GoogleGenAI } from "@google/genai";
+import Groq from "groq-sdk";
 
-const ai = new GoogleGenAI({apiKey:process.env.GEMINI_API_KEY});
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY
+});
 
 export async function askGemini(prompt: string , system_instruction:string) {
-  const response = await ai.models.generateContent({
-    model: "gemini-3.7-flash",
-    contents: prompt,
-    config:{
-        systemInstruction:system_instruction,
+  
+const response = await groq.chat.completions.create({
+  model: "openai/gpt-oss-20b",
+  messages: [
+    {
+      role: "system",
+      content: system_instruction
+    },
+    {
+      role: "user",
+      content: prompt
     }
-  });
+  ]
+});
 
-  return response.text;
+
+  return  response.choices[0].message.content;
 }
 
 

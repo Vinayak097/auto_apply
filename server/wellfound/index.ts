@@ -4,6 +4,8 @@ import { jobSearchResultsX } from "./operations/jobSearchResults";
 import { resumeExtraction} from '../utils/utils'
 import { JobApplicationModal } from "./operations/jobApplicationModel";
 import {askGemini} from '../gemini'
+import { setTimeout } from "node:timers/promises";  
+import {Match} from '../db'  
 const router =express.Router()
 router.get("/check", (req,res)=>{
     console.log("server checking")
@@ -47,8 +49,12 @@ router.get('/apply',async(req,res)=>{
     and score them in 1 to 100 okay 
     and please match this like the all required things are passed it should at least get 90+ marks 
     and the response i want in is that 
-    {jobId , score , reasonforscore}`
-    const resumeExtracted= resumeExtraction();
+    {jobId , score , reasonforscore}
+    
+    do not add extra fileds in the response 
+    if u fond no jd u can give the empyt object only
+    in the ans i only want object as response`
+    const resumeExtracted= await resumeExtraction();
      if(!resumeExtracted){
         res.status(200).json({message:"please upload the file"})
         return
@@ -56,13 +62,18 @@ router.get('/apply',async(req,res)=>{
     for(let jd of jobs){
         let prompt= `
     compare the jd and result and score it 
-    jd:${jd} ,
+    jd:${JSON.stringify(jd?.data)} ,
     resume:${resumeExtracted}`
         
-        const scored=askGemini(prompt,system_prompt)
+        const scored=await askGemini(prompt,system_prompt)
+console.log('scored one ' , scored)
+await setTimeout(11000);
         scoredJobs.push(scored)
     }
-    console.log("resumescored ")
+
+    const s = await Match.insertMany(scoredJobs)
+    console.log("resumescored, and inserted in the db ")
+    
     
     
 
@@ -73,4 +84,15 @@ router.get('/apply',async(req,res)=>{
     return;
 })
 
+router.get("/wellfound/test" , async(req,res)=>{
+    try{
+        const resumeT=await  resumeExtraction()
+        res.status(200).json({message:resumeT})
+    }
+    catch(e){
+        res.status(404).json({message:e.message})
+    }
+    
+
+})
 export default router
