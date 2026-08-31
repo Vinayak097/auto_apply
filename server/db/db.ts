@@ -1,10 +1,10 @@
-import mongoose from 'mongoose'
-import dotenv from 'dotenv'
-dotenv.config()
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 export async function connectDB() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI!);
+    await mongoose.connect(process.env.MONGO_URL!);
     console.log("MongoDB connected");
   } catch (error) {
     console.error("MongoDB connection failed:", error);
@@ -12,28 +12,28 @@ export async function connectDB() {
   }
 }
 
-const jdmodel = new mongoose.Schema({
-    jobId:{
-        type:String,
-        required:true,
-
+const jdmodel = new mongoose.Schema(
+  {
+    jobId: {
+      type: String,
+      required: true,
     },
-    score:{
-        type:String,
-        rquired:true,
-        min:1,
-        max:100
+    score: {
+      type: String,
+      rquired: true,
+      min: 1,
+      max: 100,
     },
-    reason:{
-        type:String
-    },    
-    applied:{
-        type:Boolean
-    }
-   
-},{
-    timestamps:true
-})
+    reason: {
+      type: String,
+    },
+    applied: {
+      type: Boolean,
+    },
+  },
+  {
+    timestamps: true,
+  },
+);
 
-
-export const Match =  mongoose.model("Match",jdmodel)
+export const Match = mongoose.model("Match", jdmodel);
