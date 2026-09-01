@@ -31,6 +31,6 @@ export async function validToken(
   }
   const decoded = jwt.verify(token, JWT_SECRET) as JwtPayload;
 
-  req.userId = decoded.userId;
+  req.userId = decoded.id;
   next();
 }

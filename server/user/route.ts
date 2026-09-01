@@ -6,9 +6,11 @@ import bcrypt from "bcrypt";
 import responseSend from "../statusCodes";
 import jwt from "jsonwebtoken";
 import { validToken } from "../middleware";
+
 router.post("/login", async (req, res) => {
+  console.log("rq body ", req.body);
   const payload = req.body;
-  if (!payload.email) {
+  if (!payload?.email) {
     res.status(400).json({ success: false, message: "enter  a valid email" });
     return;
   }
@@ -33,8 +35,8 @@ router.post("/login", async (req, res) => {
 });
 router.post("/register", async (req, res) => {
   const payload = req.body;
-  if (!payload.email || payload.password) {
-    responseSend(401, res);
+  if (!payload?.email || !payload?.password) {
+    responseSend(411, res);
     return;
   }
   try {

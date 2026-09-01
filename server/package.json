@@ -33,6 +33,7 @@
     "groq-sdk": "^1.6.0",
     "jsonwebtoken": "^9.0.3",
     "mammoth": "^1.12.2",
+    "mongodb": "^7.6.0",
     "mongoose": "^9.9.4",
     "pdf-parse": "^2.4.5"
   }

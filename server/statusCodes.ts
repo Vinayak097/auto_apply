@@ -49,6 +49,11 @@ function responseSend(status: number, res: Response, message?: string) {
         success: false,
         message: message || "Internal server error",
       });
+    case 411:
+      return res.status(411).json({
+        success: false,
+        message: message || "invalid credentials",
+      });
 
     default:
       return res.status(500).json({
