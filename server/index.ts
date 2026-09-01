@@ -5,6 +5,10 @@ dotenv.config();
 import wellfoundRouter from "./wellfound/index";
 import userRouter from "./user/route";
 import { connectDB } from "./db/db";
+import cors from "cors";
+
+app.use(cors());
+
 app.use(express.json());
 app.use("/wellfound", wellfoundRouter);
 app.use("/user", userRouter);
