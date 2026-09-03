@@ -24,7 +24,6 @@ type FormState = {
   roleNames: string
   locationTagIds: string
   remoteCompanyLocationTagIds: string
-  roleTagIds: string
   skillTagIds: string
   equityMin: string
   equityMax: string
@@ -48,18 +47,52 @@ const defaultSkills: LocationSuggestion[] = [
   { id: '14775', name: 'TypeScript' },
 ]
 
-const defaultRoles: LocationSuggestion[] = [
-  { id: '14726', name: 'Software Engineer' },
-  { id: '151647', name: 'Frontend Engineer' },
-  { id: '151718', name: 'Backend Engineer' },
-]
+const roles: Record<string, string> = {
+  'Software Engineer': '14726',
+  'Mobile Developer': '14739',
+  Designer: '14883',
+  'User Researcher': '26840',
+  'Product Manager': '80487',
+  'Finance/Accounting': '103477',
+  'H.R.': '103479',
+  'Business Development': '144329',
+  'Data Scientist': '150975',
+  DevOps: '150979',
+  'Creative Director': '150990',
+  'Growth Hacker': '150995',
+  CTO: '151118',
+  'Embedded Engineer': '151452',
+  'Project Manager': '151454',
+  'Engineering Manager': '151580',
+  'Systems Engineer': '151582',
+  'Product Designer': '151598',
+  'Backend Engineer': '151647',
+  'Frontend Engineer': '151711',
+  'Full-Stack Engineer': '151718',
+  'Software Architect': '151934',
+  'QA Engineer': '152011',
+  'Graphic Designer': '152355',
+  'Data Engineer': '155890',
+  'Visual Designer': '156247',
+  'iOS Developer': '157714',
+  'Social Media Manager': '158252',
+  Recruiter: '385755',
+  'Machine Learning Engineer': '740740',
+  Engineering: '751460',
+  Product: '751461',
+  'Design Manager': '751462',
+  'Security Engineer': '751463',
+  'Android Developer': '751464',
+}
+
+const currencyCodes = ['INR', 'EUR', 'USD', 'GBP', 'CAD', 'JPY', 'CNY', 'SGD']
+const defaultRoleNames = ['Software Engineer', 'Frontend Engineer', 'Backend Engineer']
 
 const initialForm: FormState = {
   currencyCode: 'USD',
-  roleNames: defaultRoles.map((role) => role.name).join(', '),
+  roleNames: defaultRoleNames.join(', '),
   locationTagIds: '',
   remoteCompanyLocationTagIds: '',
-  roleTagIds: defaultRoles.map((role) => role.id).join(', '),
   skillTagIds: ['14775', '17000', '139914'].join(', '),
   equityMin: '',
   equityMax: '',
@@ -77,6 +110,9 @@ const toTagIds = (value: string) =>
 
 const toNullableNumber = (value: string): NullableNumber =>
   value.trim() === '' ? null : Number(value)
+
+const namesToRoleIds = (value: string) =>
+  value.split(',').map((name) => roles[name.trim()]).filter(Boolean)
 
 const findAutocompleteSuggestions = (payload: unknown, field: 'locationTags' | 'skillTags'): LocationSuggestion[] => {
   if (!payload || typeof payload !== 'object') return []
@@ -98,7 +134,7 @@ const buildJobSearchFilter = (form: FormState): JobSearchFilter => ({
   currencyCode: form.currencyCode,
   locationTagIds: toTagIds(form.locationTagIds),
   remoteCompanyLocationTagIds: toTagIds(form.remoteCompanyLocationTagIds),
-  roleTagIds: toTagIds(form.roleTagIds),
+  roleTagIds: namesToRoleIds(form.roleNames),
   skillTagIds: toTagIds(form.skillTagIds),
   equity: {
     min: toNullableNumber(form.equityMin),
@@ -120,6 +156,8 @@ const buildJobSearchFilter = (form: FormState): JobSearchFilter => ({
 const Wellfound = () => {
   const [form, setForm] = useState<FormState>(initialForm)
   const [showFilters, setShowFilters] = useState(false)
+  const [roleQuery, setRoleQuery] = useState('')
+  const [roleSuggestions, setRoleSuggestions] = useState<string[]>([])
   const [locationQuery, setLocationQuery] = useState('')
   const [locationSuggestions, setLocationSuggestions] = useState<LocationSuggestion[]>([])
   const [locationLoading, setLocationLoading] = useState(false)
@@ -187,6 +225,26 @@ const Wellfound = () => {
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((current) => ({ ...current, [field]: value }))
+  }
+
+  const updateRoleSuggestions = (query: string) => {
+    const selectedRoleNames = names(form.roleNames)
+    const normalizedQuery = query.trim().toLowerCase()
+    setRoleSuggestions(
+      Object.keys(roles).filter((roleName) =>
+        !selectedRoleNames.includes(roleName) && roleName.toLowerCase().includes(normalizedQuery),
+      ),
+    )
+  }
+
+  const selectRole = (roleName: string) => {
+    updateField('roleNames', [...names(form.roleNames), roleName].join(', '))
+    setRoleQuery('')
+    setRoleSuggestions([])
+  }
+
+  const removeRole = (roleName: string) => {
+    updateField('roleNames', names(form.roleNames).filter((name) => name !== roleName).join(', '))
   }
 
   const toggleJobType = (jobType: string) => {
@@ -267,10 +325,10 @@ const Wellfound = () => {
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
-              <label className="text-sm font-medium">Role names<input value={form.roleNames} onChange={(event) => updateField('roleNames', event.target.value)} placeholder="e.g. Software Engineer, Product Manager" className={inputClass} /></label>
-              <label className="text-sm font-medium">Role tag IDs<input value={form.roleTagIds} onChange={(event) => updateField('roleTagIds', event.target.value)} placeholder="e.g. 14726, 151647" className={inputClass} /></label>
-              <label className="text-sm font-medium">Remote company location tag IDs<input value={form.remoteCompanyLocationTagIds} onChange={(event) => updateField('remoteCompanyLocationTagIds', event.target.value)} placeholder="Enter location tag IDs" className={inputClass} /></label>
-              <label className="text-sm font-medium">Currency<input value={form.currencyCode} onChange={(event) => updateField('currencyCode', event.target.value)} placeholder="USD" className={inputClass} /></label>
+              <div className="relative"><label className="text-sm font-medium">Roles<input value={roleQuery} onFocus={() => updateRoleSuggestions(roleQuery)} onChange={(event) => { setRoleQuery(event.target.value); updateRoleSuggestions(event.target.value) }} placeholder="Search for a role" autoComplete="off" className={inputClass} /></label>{names(form.roleNames).length > 0 && <div className="mt-2 flex flex-wrap gap-2">{names(form.roleNames).map((roleName) => <button type="button" key={roleName} onClick={() => removeRole(roleName)} className="rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-900" title="Remove role">{roleName} x</button>)}</div>}{roleSuggestions.length > 0 && <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">{roleSuggestions.map((roleName) => <button type="button" key={roleName} onClick={() => selectRole(roleName)} className="block w-full px-3 py-2 text-left text-sm hover:bg-amber-50">{roleName}</button>)}</div>}</div>
+              <label className="text-sm font-medium">Currency<select value={form.currencyCode} onChange={(event) => updateField('currencyCode', event.target.value)} className={inputClass}>
+                {currencyCodes.map((currencyCode) => <option key={currencyCode} value={currencyCode}>{currencyCode}</option>)}
+              </select></label>
             </div>
 
             <div className="relative"><label className="text-sm font-medium">Locations<input value={locationQuery} onChange={(event) => setLocationQuery(event.target.value)} placeholder="Start typing a city or country" autoComplete="off" className={inputClass} /></label>{selectedLocations.length > 0 && <div className="mt-2 flex flex-wrap gap-2">{selectedLocations.map((location) => <button type="button" key={location.id} onClick={() => removeLocation(location.id)} className="rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-900" title="Remove location">{location.name} x</button>)}</div>}{(locationLoading || locationSuggestions.length > 0) && <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">{locationLoading && <p className="px-3 py-2 text-sm text-slate-500">Searching...</p>}{locationSuggestions.map((suggestion) => <button type="button" key={suggestion.id} onClick={() => selectLocation(suggestion)} className="block w-full px-3 py-2 text-left text-sm hover:bg-amber-50">{suggestion.name}</button>)}</div>}</div>
