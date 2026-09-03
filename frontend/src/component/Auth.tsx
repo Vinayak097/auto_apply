@@ -1,4 +1,5 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import type { FormEvent } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../slices/user";
 
@@ -56,8 +57,9 @@ function Auth() {
       console.log(data);
       Me(data.token)
 
-    } catch (error) {
-      setError(error.message)
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : "Authentication failed";
+      setError(message)
         setTimeout(() => {
           setError("")
         }, (5000));
@@ -82,9 +84,10 @@ function Auth() {
     dispatch(login(data.data))
     localStorage.setItem("auto-token",token)
     
-    }catch(e){
-      setErrors(e.message)
-      console.log("error /me " , e.mesage)
+    }catch(e: unknown){
+      const message = e instanceof Error ? e.message : "Request failed";
+      setErrors(message)
+      console.log("error /me " , message)
     }
   }
   function setErrors(message:string){
@@ -95,7 +98,7 @@ function Auth() {
   }
 
   return (
-    <main className="flex min-h-screen w-full items-center justify-center bg-gray-50 px-4 py-8 sm:px-6 bg-red-400">
+    <main className="flex min-h-screen w-full items-center justify-center bg-red-400 px-4 py-8 sm:px-6">
       <section className="w-full max-w-md rounded-2xl bg-white p-5 shadow-md sm:p-8">
         {/* Header */}
         <div className="mb-6 text-center sm:mb-8">

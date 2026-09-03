@@ -6,5 +6,5 @@ export const store = configureStore({
   },
 });
 
-export type TypeRootState = typeof store.getState;
+export type TypeRootState = ReturnType<typeof store.getState>;
 export type Dispatch = typeof store.dispatch;

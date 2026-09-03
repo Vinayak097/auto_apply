@@ -133,8 +133,8 @@ router.get('/apply',async(req,res)=>{
     console.log("api hit")
     const filterConfiguration = await JobSearchPage()
 
-    if(filterConfiguration.data!=undefined &&filterConfiguration.data==null){
-        if(filterConfiguration.status==403){
+    if("data" in filterConfiguration && filterConfiguration.data==null){
+        if("status" in filterConfiguration && filterConfiguration.status==403){
             res.status(403).json({message:"please reset your cookiet token"})
             return
         }

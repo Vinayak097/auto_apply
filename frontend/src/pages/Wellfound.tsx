@@ -37,11 +37,16 @@ type LocationSuggestion = {
   name: string
 }
 
+const defaultSkills: LocationSuggestion[] = [
+  { id: '139914', name: 'React.js' },
+  { id: '17000', name: 'Node.js' },
+]
+
 const initialForm: FormState = {
-  locationTagIds: '406413',
-  remoteCompanyLocationTagIds: '153509',
-  roleTagIds: '151718',
-  skillTagIds: '17000, 139914',
+  locationTagIds: '',
+  remoteCompanyLocationTagIds: '',
+  roleTagIds: '',
+  skillTagIds: defaultSkills.map((skill) => skill.id).join(', '),
   equityMin: '',
   equityMax: '',
   jobTypes: ['full_time', 'internship'],
@@ -101,9 +106,11 @@ const Wellfound = () => {
   const [locationQuery, setLocationQuery] = useState('')
   const [locationSuggestions, setLocationSuggestions] = useState<LocationSuggestion[]>([])
   const [locationLoading, setLocationLoading] = useState(false)
+  const [selectedLocations, setSelectedLocations] = useState<LocationSuggestion[]>([])
   const [skillQuery, setSkillQuery] = useState('')
   const [skillSuggestions, setSkillSuggestions] = useState<LocationSuggestion[]>([])
   const [skillLoading, setSkillLoading] = useState(false)
+  const [selectedSkills, setSelectedSkills] = useState<LocationSuggestion[]>(defaultSkills)
 
   useEffect(() => {
     const query = locationQuery.trim()
@@ -178,6 +185,7 @@ const Wellfound = () => {
     const ids = toTagIds(form.locationTagIds)
     if (!ids.includes(suggestion.id)) {
       updateField('locationTagIds', [...ids, suggestion.id].join(', '))
+      setSelectedLocations((current) => [...current, suggestion])
     }
     setLocationQuery('')
     setLocationSuggestions([])
@@ -187,21 +195,26 @@ const Wellfound = () => {
     const ids = toTagIds(form.skillTagIds)
     if (!ids.includes(suggestion.id)) {
       updateField('skillTagIds', [...ids, suggestion.id].join(', '))
+      setSelectedSkills((current) => [...current, suggestion])
     }
     setSkillQuery('')
     setSkillSuggestions([])
+  }
+
+  const removeLocation = (id: string) => {
+    setSelectedLocations((current) => current.filter((location) => location.id !== id))
+    updateField('locationTagIds', toTagIds(form.locationTagIds).filter((tagId) => tagId !== id).join(', '))
+  }
+
+  const removeSkill = (id: string) => {
+    setSelectedSkills((current) => current.filter((skill) => skill.id !== id))
+    updateField('skillTagIds', toTagIds(form.skillTagIds).filter((tagId) => tagId !== id).join(', '))
   }
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setFilter(buildJobSearchFilter(form))
   }
-
-  const textFields: Array<[keyof FormState, string, string]> = [
-    ['locationTagIds', 'Location tag IDs', '406413'],
-    ['remoteCompanyLocationTagIds', 'Remote company location tag IDs', '153509'],
-    ['roleTagIds', 'Role tag IDs', '151718'],
-  ]
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -213,23 +226,9 @@ const Wellfound = () => {
             <h1 className="mt-1 text-2xl font-bold">Build job filters</h1>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            {textFields.map(([field, label, placeholder]) => (
-              <label key={field} className="text-sm font-medium">
-                {label}
-                <input
-                  value={form[field] as string}
-                  onChange={(event) => updateField(field, event.target.value)}
-                  placeholder={placeholder}
-                  className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 font-normal outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
-                />
-              </label>
-            ))}
-          </div>
-
           <div className="relative">
             <label className="text-sm font-medium">
-              Search locations
+              Locations
               <input
                 value={locationQuery}
                 onChange={(event) => setLocationQuery(event.target.value)}
@@ -238,6 +237,21 @@ const Wellfound = () => {
                 className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 font-normal outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
               />
             </label>
+            {selectedLocations.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-2">
+                {selectedLocations.map((location) => (
+                  <button
+                    type="button"
+                    key={location.id}
+                    onClick={() => removeLocation(location.id)}
+                    className="rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-900 hover:bg-amber-200"
+                    title="Remove location"
+                  >
+                    {location.name} x
+                  </button>
+                ))}
+              </div>
+            )}
             {(locationLoading || locationSuggestions.length > 0) && (
               <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">
                 {locationLoading && <p className="px-3 py-2 text-sm text-slate-500">Searching...</p>}
@@ -257,7 +271,7 @@ const Wellfound = () => {
 
           <div className="relative">
             <label className="text-sm font-medium">
-              Skills
+              Skills (React.js, Node.js selected)
               <input
                 value={skillQuery}
                 onChange={(event) => setSkillQuery(event.target.value)}
@@ -266,6 +280,21 @@ const Wellfound = () => {
                 className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 font-normal outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
               />
             </label>
+            {selectedSkills.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-2">
+                {selectedSkills.map((skill) => (
+                  <button
+                    type="button"
+                    key={skill.id}
+                    onClick={() => removeSkill(skill.id)}
+                    className="rounded-full bg-amber-100 px-3 py-1 text-sm text-amber-900 hover:bg-amber-200"
+                    title="Remove skill"
+                  >
+                    {skill.name} x
+                  </button>
+                ))}
+              </div>
+            )}
             {(skillLoading || skillSuggestions.length > 0) && (
               <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">
                 {skillLoading && <p className="px-3 py-2 text-sm text-slate-500">Searching...</p>}

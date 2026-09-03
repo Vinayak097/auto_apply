@@ -1,5 +1,3 @@
-import React from 'react'
-import Auth from '../component/Auth'
 import Navbar from '../component/Navbar'
 import { useNavigate } from 'react-router-dom'
 
@@ -18,8 +16,8 @@ const Home = () => {
         <Navbar></Navbar>
         <p className='border'></p>
         <section className='mt-5 px-5'>
-          {applidJobs.map((job,index)=>(
-          <div onClick={()=>{handleClick(job)}}  className={`p-5 hover:cursor-pointer border-1 m-2 border-amber-800 ${job.active? "opacity-100" : "opacity:50"} bg-amber-200`}>
+          {applidJobs.map((job)=>(
+          <div onClick={()=>{handleClick(job)}}  className={`p-5 hover:cursor-pointer border m-2 border-amber-800 ${job.active? "opacity-100" : "opacity:50"} bg-amber-200`}>
               <h2>{job.name}</h2>
 
             </div>

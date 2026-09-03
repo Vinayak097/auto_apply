@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 interface User {
   id: string;
@@ -9,6 +9,11 @@ interface AuthState {
   isAuthenticated: boolean;
   user: User | null;
 }
+interface UserPayload {
+  _id: string;
+  email: string;
+  name?: string;
+}
 const initialState: AuthState = {
   isAuthenticated: false,
   user: null,
@@ -17,7 +22,7 @@ export const userSlice = createSlice({
   name: "user",
   initialState: initialState,
   reducers: {
-    login: (state, action) => {
+    login: (state, action: PayloadAction<UserPayload>) => {
       console.log("inside the login ", action.payload);
       let obj = {
         id: action.payload._id,
@@ -26,7 +31,7 @@ export const userSlice = createSlice({
       state.user = obj;
       return state;
     },
-    register: (state, action) => {
+    register: (state, action: PayloadAction<UserPayload>) => {
       let obj = {
         id: action.payload._id,
         email: action.payload.email,
@@ -35,7 +40,7 @@ export const userSlice = createSlice({
       state.user = obj;
       return state;
     },
-    logout: (state, action) => {
+    logout: (state) => {
       state.user = null;
       return state;
     },
