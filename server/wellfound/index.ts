@@ -6,6 +6,7 @@ import { JobApplicationModal } from "./operations/jobApplicationModel";
 import { askGemini } from "../gemini";
 import { setTimeout } from "node:timers/promises";
 import { Match } from "../db/db";
+import {IJobScore, JobScore} from '../db/jobScore'
 const router = express.Router();
 
 router.get("/location-tags", async (req, res) => {
@@ -142,6 +143,66 @@ router.post("/save-filter ", (req, res) => {
   try {
   } catch (e) {}
 });
+const jobScoreFormat = {
+  score: "number between 0 and 100",
+  matchedSkills: "array of strings",
+  missingSkills: "array of strings",
+  reasoning: "string",
+  applicationStatus: "not_applied",
+};
+router.get('/today-jobs',async(req,res)=>{
+    const userId=req.userId
+    const page = Number(req.query.page) || 1;
+    const limit = 20;
+
+    const skip = (page - 1) * limit;
+     const startOfToday = new Date();
+    startOfToday.setHours(0, 0, 0, 0);
+
+    const endOfToday = new Date();
+    endOfToday.setHours(23, 59, 59, 999);
+    try{
+    const jobScores = await JobScore.find({
+      userId,
+      createdAt: {
+        $gte: startOfToday,
+        $lte: endOfToday,
+      },
+    })
+      .sort({ score: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    const totalJobs = await JobScore.countDocuments({
+      userId,
+      createdAt: {
+        $gte: startOfToday,
+        $lte: endOfToday,
+      },
+    });
+    const hasNextPage = skip + jobScores.length < totalJobs;
+
+    res.status(200).json({
+      success: true,
+      jobs: jobScores,
+      pagination: {
+        page,
+        limit,
+        totalJobs,
+        hasNextPage,
+      },
+    });
+  }catch(e){
+    console.error(e);
+
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch today's jobs",
+    });
+  }
+
+
+})
 router.get("/apply", async (req, res) => {
   console.log("api hit");
   const filterConfiguration = await JobSearchPage();
@@ -157,34 +218,34 @@ router.get("/apply", async (req, res) => {
     });
     return;
   }
-  console.log("jobsearchpage");
-  const result = await jobSearchResultsX(filterConfiguration);
-  if (!result) {
-    res.status(400).json({ message: "fialed to apply" });
-  }
-  if (result.status == 403) {
-    res
-      .status(403)
-      .json({ message: "failed to apply pls try reset your apollo signature" });
-    return;
-  }
+  const filterjobs= req.body;
+  let hasNextPage=true;
 
-  let jobs = [];
+  while(hasNextPage){
+    const result = await jobSearchResultsX(filterjobs);
+    hasNextPage=result.hasNextPage
+    let jobs = [];
+    for (let job of result.jobs){
+      const findJob=await JobScore.findOne({
+        jobId:job.jobId,
+        userId:req.userId
+      })
+      if(findJob) continue
+      const response =await JobApplicationModal(job)
+      jobs.push(response)
+    }
 
-  for (let job of result.jobs) {
-    const jd = await JobApplicationModal(job);
-    jobs.push(jd);
-  }
   console.log("jobApplicationmodel");
   let scoredJobs = [];
   let system_prompt = `your assitent who checks the resume and jd and give the match score to them so i can choose to apply 
     and score them in 1 to 100 okay 
-    and please match this like the all required things are passed it should at least get 90+ marks 
+    and please match this like the all required things are passed, it should at least get 90+ marks 
     and the response i want in is that 
-    {jobId , score , reasonforscore}
+    in this format ${JSON.stringify(jobScoreFormat, null, 2)}
+    
     
     do not add extra fileds in the response 
-    if u fond no jd u can give the empyt object only
+    if u found no jd u can give the empyt object only
     in the ans i only want object as response`;
   const resumeExtracted = await resumeExtraction();
   if (!resumeExtracted) {
@@ -194,19 +255,20 @@ router.get("/apply", async (req, res) => {
   for (let jd of jobs) {
     let prompt = `
     compare the jd and result and score it 
-    jd:${JSON.stringify(jd?.data)} ,
+    jd:${JSON.stringify(jd?.data)},
     resume:${resumeExtracted}`;
-
+    
     const scored = await askGemini(prompt, system_prompt);
     console.log("scored one ", scored);
-    await setTimeout(11000);
+    await setTimeout(5000);
     scoredJobs.push(scored);
   }
 
   const s = await Match.insertMany(scoredJobs);
   console.log("resumescored, and inserted in the db ");
+}
 
-  res.status(200).json({ message: "success", scoredJobs });
+  res.status(200).json({ message: "success",  });
   return;
 });
 

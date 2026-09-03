@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { FormEvent } from 'react'
 import Navbar from '../component/Navbar'
-
+const backendUrl="http://localhost:3001/wellfound"
 type NullableNumber = number | null
 
 type JobSearchFilter = {
@@ -166,7 +166,8 @@ const Wellfound = () => {
   const [skillSuggestions, setSkillSuggestions] = useState<LocationSuggestion[]>([])
   const [skillLoading, setSkillLoading] = useState(false)
   const [selectedSkills, setSelectedSkills] = useState<LocationSuggestion[]>(defaultSkills)
-
+  const [todayJobs,setTodayJobs]=useState<any|null>(null)
+  console.log(todayJobs)
   useEffect(() => {
     const query = locationQuery.trim()
     if (!query) {
@@ -295,10 +296,35 @@ const Wellfound = () => {
   const names = (value: string) => value.split(',').map((name) => name.trim()).filter(Boolean)
   const inputClass = 'mt-1 w-full rounded-md border border-slate-300 px-3 py-2 font-normal outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100'
 
+  async function fetchTodayjobs(){
+    console.log('fetching jobs triggerd')
+      try{
+        const response = await fetch(`${backendUrl}/today-jobs`,{
+          method:"GET",
+          headers:{
+            "Authorization":`Bearer ${localStorage.getItem("auto-token")}`
+          }
+        })
+        if(!response.ok){
+          setTodayJobs(null)
+          return
+        }
+        console.log("response for today jobs " , response)
+
+
+      }catch(e){
+        console.log(e, 'erro fetching today jobs ')
+      }
+  }
+
+  useEffect(()=>{
+      fetchTodayjobs()
+  },[])
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+
+    <div className="min-h-screen bg-slate-50 text-slate-900 px-5 py-8">
       <Navbar />
-      <main className="w-full px-5 py-8">
+      <main className="w-full ">
         {!showFilters ? (
           <section className="w-full rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
@@ -342,6 +368,15 @@ const Wellfound = () => {
           </form>
         )}
       </main>
+
+      <section className='mt-4'>
+        <h2>today jobs </h2>
+        <div>
+
+
+        </div>
+      </section>
+
     </div>
   )
 }

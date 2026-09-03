@@ -23,7 +23,7 @@ export async function validToken(
     return;
   }
   const token = authHeader.split(" ")[1];
-  if (!token) {
+  if (token==null) {
     return res.status(401).json({
       success: false,
       message: "Invalid authorization header",

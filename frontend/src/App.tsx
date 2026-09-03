@@ -6,8 +6,6 @@ import Home from './pages/Home'
 import Wellfound from './pages/Wellfound'
 
 function App() {
-  
-
   return (
     <>
     <BrowserRouter>

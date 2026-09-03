@@ -6,11 +6,12 @@ import wellfoundRouter from "./wellfound/index";
 import userRouter from "./user/route";
 import { connectDB } from "./db/db";
 import cors from "cors";
+import { validToken } from "./middleware";
 
 app.use(cors());
 
 app.use(express.json());
-app.use("/wellfound", wellfoundRouter);
+app.use("/wellfound",validToken, wellfoundRouter);
 app.use("/user", userRouter);
 app.get("/healthy", (req, res) => {
   res.status(200).json({ message: "server is healthy" });
